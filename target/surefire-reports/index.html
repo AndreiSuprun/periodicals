@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
+              <span class="suite-name border-passed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Command_line_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Command_line_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Command_line_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Command_line_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Command_line_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Command_line_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Command_line_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">51 methods,   51 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.entity.SubscriptionBinTest" class="method navigator-link" hash-for-method="addItemTest">addItemTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.SubscriptionBinServiceTest" class="method navigator-link" hash-for-method="addItemToCartTest">addItemToCartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="changeStatusOnAnotherStatusTest">changeStatusOnAnotherStatusTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="changeStatusOnSameStatusTest">changeStatusOnSameStatusTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PaymentServiceTest" class="method navigator-link" hash-for-method="createPayment">createPayment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="createPeriodicalTest">createPeriodicalTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="findAllFrequenciesTest">findAllFrequenciesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PaymentServiceTest" class="method navigator-link" hash-for-method="findAllPaymentsTest">findAllPaymentsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="findAllPeriodicalTypesTest">findAllPeriodicalTypesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="findAllPeriodicalsByStatusTest">findAllPeriodicalsByStatusTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="findAllPeriodicalsTest">findAllPeriodicalsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="findAllPublishersTest">findAllPublishersTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.SubscriptionServiceTest" class="method navigator-link" hash-for-method="findAllSubscriptionPlans">findAllSubscriptionPlans</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.SubscriptionServiceTest" class="method navigator-link" hash-for-method="findAllSubscriptionsByPaymentWithExistingSubscriptionsTest">findAllSubscriptionsByPaymentWithExistingSubscriptionsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.SubscriptionServiceTest" class="method navigator-link" hash-for-method="findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest">findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.SubscriptionServiceTest" class="method navigator-link" hash-for-method="findAllSubscriptionsByUserAndStatusTest">findAllSubscriptionsByUserAndStatusTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PaymentServiceTest" class="method navigator-link" hash-for-method="findPaymentByIdWithExistingPaymentTest">findPaymentByIdWithExistingPaymentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PaymentServiceTest" class="method navigator-link" hash-for-method="findPaymentByIdWithNotExistingPaymentTest">findPaymentByIdWithNotExistingPaymentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="findPeriodicalByIdWithExistingPeriodicalTest">findPeriodicalByIdWithExistingPeriodicalTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="findPeriodicalByIdWithNotExistingPeriodicalTest">findPeriodicalByIdWithNotExistingPeriodicalTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.SubscriptionServiceTest" class="method navigator-link" hash-for-method="findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest">findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.SubscriptionServiceTest" class="method navigator-link" hash-for-method="findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest">findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.UserServiceTest" class="method navigator-link" hash-for-method="findUserByIdWithExistingUserTest">findUserByIdWithExistingUserTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.UserServiceTest" class="method navigator-link" hash-for-method="findUserByIdWithNotExistingUserTest">findUserByIdWithNotExistingUserTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.entity.SubscriptionBinTest" class="method navigator-link" hash-for-method="getItemsTest">getItemsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PaymentServiceTest" class="method navigator-link" hash-for-method="getPaymentsCountTest">getPaymentsCountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="getPeriodicalsCountByStatusTest">getPeriodicalsCountByStatusTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="getPeriodicalsCountTest">getPeriodicalsCountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.SubscriptionServiceTest" class="method navigator-link" hash-for-method="getSubscriptionsCountByUserAndStatusTest">getSubscriptionsCountByUserAndStatusTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.entity.SubscriptionBinTest" class="method navigator-link" hash-for-method="getTotalPriceTest">getTotalPriceTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.SubscriptionServiceTest" class="method navigator-link" hash-for-method="isAlreadySubscribed">isAlreadySubscribed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.entity.SubscriptionBinTest" class="method navigator-link" hash-for-method="isHasSuspendedPeriodicalTest">isHasSuspendedPeriodicalTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.SubscriptionServiceTest" class="method navigator-link" hash-for-method="processSubscriptionsTestWithNotValidData">processSubscriptionsTestWithNotValidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.UserServiceTest" class="method navigator-link" hash-for-method="registerUserWithNullEmailTest">registerUserWithNullEmailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.UserServiceTest" class="method navigator-link" hash-for-method="registerUserWithNullPasswordTest">registerUserWithNullPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.UserServiceTest" class="method navigator-link" hash-for-method="registerUserWithSameEmailTest">registerUserWithSameEmailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.UserServiceTest" class="method navigator-link" hash-for-method="registerUserWithValidParametersTest">registerUserWithValidParametersTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.SubscriptionBinServiceTest" class="method navigator-link" hash-for-method="removeAllItemFromCartTest">removeAllItemFromCartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.SubscriptionBinServiceTest" class="method navigator-link" hash-for-method="removeItemFromCartTest">removeItemFromCartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.entity.SubscriptionBinTest" class="method navigator-link" hash-for-method="removeItemInvalidIdTest">removeItemInvalidIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.entity.SubscriptionBinTest" class="method navigator-link" hash-for-method="removeItemTest">removeItemTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.UserServiceTest" class="method navigator-link" hash-for-method="signInWithCorrectEmailAndPasswordTest">signInWithCorrectEmailAndPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.UserServiceTest" class="method navigator-link" hash-for-method="signInWithNullEmailTest">signInWithNullEmailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.UserServiceTest" class="method navigator-link" hash-for-method="signInWithNullPasswordTest">signInWithNullPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.UserServiceTest" class="method navigator-link" hash-for-method="signInWithWrongEmailTest">signInWithWrongEmailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.UserServiceTest" class="method navigator-link" hash-for-method="signInWithWrongPasswordTest">signInWithWrongPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.entity.SubscriptionBinTest" class="method navigator-link" hash-for-method="updateItemWithAnotherItemTest">updateItemWithAnotherItemTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.entity.SubscriptionBinTest" class="method navigator-link" hash-for-method="updateItemWithSameItemTest">updateItemWithSameItemTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="updatePeriodicalTest">updatePeriodicalTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.SubscriptionBinServiceTest" class="method navigator-link" hash-for-method="updateShoppingCartItemsFromDatabaseTest">updateShoppingCartItemsFromDatabaseTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.SubscriptionBinServiceTest" class="method navigator-link" hash-for-method="updateShoppingCartItemsFromDatabaseWithExceptionTest">updateShoppingCartItemsFromDatabaseWithExceptionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.suprun.periodicals.service.PeriodicalServiceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeStatusOnAnotherStatusTest">
+                  </a> <!-- changeStatusOnAnotherStatusTest -->
+                  <span class="method-name">changeStatusOnAnotherStatusTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="changeStatusOnSameStatusTest">
+                  </a> <!-- changeStatusOnSameStatusTest -->
+                  <span class="method-name">changeStatusOnSameStatusTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPeriodicalTest">
+                  </a> <!-- createPeriodicalTest -->
+                  <span class="method-name">createPeriodicalTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllFrequenciesTest">
+                  </a> <!-- findAllFrequenciesTest -->
+                  <span class="method-name">findAllFrequenciesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllPeriodicalTypesTest">
+                  </a> <!-- findAllPeriodicalTypesTest -->
+                  <span class="method-name">findAllPeriodicalTypesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllPeriodicalsByStatusTest">
+                  </a> <!-- findAllPeriodicalsByStatusTest -->
+                  <span class="method-name">findAllPeriodicalsByStatusTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllPeriodicalsTest">
+                  </a> <!-- findAllPeriodicalsTest -->
+                  <span class="method-name">findAllPeriodicalsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllPublishersTest">
+                  </a> <!-- findAllPublishersTest -->
+                  <span class="method-name">findAllPublishersTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findPeriodicalByIdWithExistingPeriodicalTest">
+                  </a> <!-- findPeriodicalByIdWithExistingPeriodicalTest -->
+                  <span class="method-name">findPeriodicalByIdWithExistingPeriodicalTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findPeriodicalByIdWithNotExistingPeriodicalTest">
+                  </a> <!-- findPeriodicalByIdWithNotExistingPeriodicalTest -->
+                  <span class="method-name">findPeriodicalByIdWithNotExistingPeriodicalTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPeriodicalsCountByStatusTest">
+                  </a> <!-- getPeriodicalsCountByStatusTest -->
+                  <span class="method-name">getPeriodicalsCountByStatusTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPeriodicalsCountTest">
+                  </a> <!-- getPeriodicalsCountTest -->
+                  <span class="method-name">getPeriodicalsCountTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePeriodicalTest">
+                  </a> <!-- updatePeriodicalTest -->
+                  <span class="method-name">updatePeriodicalTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.suprun.periodicals.service.SubscriptionBinServiceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addItemToCartTest">
+                  </a> <!-- addItemToCartTest -->
+                  <span class="method-name">addItemToCartTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeAllItemFromCartTest">
+                  </a> <!-- removeAllItemFromCartTest -->
+                  <span class="method-name">removeAllItemFromCartTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeItemFromCartTest">
+                  </a> <!-- removeItemFromCartTest -->
+                  <span class="method-name">removeItemFromCartTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateShoppingCartItemsFromDatabaseTest">
+                  </a> <!-- updateShoppingCartItemsFromDatabaseTest -->
+                  <span class="method-name">updateShoppingCartItemsFromDatabaseTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateShoppingCartItemsFromDatabaseWithExceptionTest">
+                  </a> <!-- updateShoppingCartItemsFromDatabaseWithExceptionTest -->
+                  <span class="method-name">updateShoppingCartItemsFromDatabaseWithExceptionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.suprun.periodicals.service.UserServiceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="findUserByIdWithExistingUserTest">
+                  </a> <!-- findUserByIdWithExistingUserTest -->
+                  <span class="method-name">findUserByIdWithExistingUserTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findUserByIdWithNotExistingUserTest">
+                  </a> <!-- findUserByIdWithNotExistingUserTest -->
+                  <span class="method-name">findUserByIdWithNotExistingUserTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserWithNullEmailTest">
+                  </a> <!-- registerUserWithNullEmailTest -->
+                  <span class="method-name">registerUserWithNullEmailTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserWithNullPasswordTest">
+                  </a> <!-- registerUserWithNullPasswordTest -->
+                  <span class="method-name">registerUserWithNullPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserWithSameEmailTest">
+                  </a> <!-- registerUserWithSameEmailTest -->
+                  <span class="method-name">registerUserWithSameEmailTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserWithValidParametersTest">
+                  </a> <!-- registerUserWithValidParametersTest -->
+                  <span class="method-name">registerUserWithValidParametersTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signInWithCorrectEmailAndPasswordTest">
+                  </a> <!-- signInWithCorrectEmailAndPasswordTest -->
+                  <span class="method-name">signInWithCorrectEmailAndPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signInWithNullEmailTest">
+                  </a> <!-- signInWithNullEmailTest -->
+                  <span class="method-name">signInWithNullEmailTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signInWithNullPasswordTest">
+                  </a> <!-- signInWithNullPasswordTest -->
+                  <span class="method-name">signInWithNullPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signInWithWrongEmailTest">
+                  </a> <!-- signInWithWrongEmailTest -->
+                  <span class="method-name">signInWithWrongEmailTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signInWithWrongPasswordTest">
+                  </a> <!-- signInWithWrongPasswordTest -->
+                  <span class="method-name">signInWithWrongPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.suprun.periodicals.service.entity.SubscriptionBinTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addItemTest">
+                  </a> <!-- addItemTest -->
+                  <span class="method-name">addItemTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getItemsTest">
+                  </a> <!-- getItemsTest -->
+                  <span class="method-name">getItemsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTotalPriceTest">
+                  </a> <!-- getTotalPriceTest -->
+                  <span class="method-name">getTotalPriceTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isHasSuspendedPeriodicalTest">
+                  </a> <!-- isHasSuspendedPeriodicalTest -->
+                  <span class="method-name">isHasSuspendedPeriodicalTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeItemInvalidIdTest">
+                  </a> <!-- removeItemInvalidIdTest -->
+                  <span class="method-name">removeItemInvalidIdTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeItemTest">
+                  </a> <!-- removeItemTest -->
+                  <span class="method-name">removeItemTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateItemWithAnotherItemTest">
+                  </a> <!-- updateItemWithAnotherItemTest -->
+                  <span class="method-name">updateItemWithAnotherItemTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateItemWithSameItemTest">
+                  </a> <!-- updateItemWithSameItemTest -->
+                  <span class="method-name">updateItemWithSameItemTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.suprun.periodicals.service.PaymentServiceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPayment">
+                  </a> <!-- createPayment -->
+                  <span class="method-name">createPayment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllPaymentsTest">
+                  </a> <!-- findAllPaymentsTest -->
+                  <span class="method-name">findAllPaymentsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findPaymentByIdWithExistingPaymentTest">
+                  </a> <!-- findPaymentByIdWithExistingPaymentTest -->
+                  <span class="method-name">findPaymentByIdWithExistingPaymentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findPaymentByIdWithNotExistingPaymentTest">
+                  </a> <!-- findPaymentByIdWithNotExistingPaymentTest -->
+                  <span class="method-name">findPaymentByIdWithNotExistingPaymentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPaymentsCountTest">
+                  </a> <!-- getPaymentsCountTest -->
+                  <span class="method-name">getPaymentsCountTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.suprun.periodicals.service.SubscriptionServiceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllSubscriptionPlans">
+                  </a> <!-- findAllSubscriptionPlans -->
+                  <span class="method-name">findAllSubscriptionPlans</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllSubscriptionsByPaymentWithExistingSubscriptionsTest">
+                  </a> <!-- findAllSubscriptionsByPaymentWithExistingSubscriptionsTest -->
+                  <span class="method-name">findAllSubscriptionsByPaymentWithExistingSubscriptionsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest">
+                  </a> <!-- findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest -->
+                  <span class="method-name">findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findAllSubscriptionsByUserAndStatusTest">
+                  </a> <!-- findAllSubscriptionsByUserAndStatusTest -->
+                  <span class="method-name">findAllSubscriptionsByUserAndStatusTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest">
+                  </a> <!-- findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest -->
+                  <span class="method-name">findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest">
+                  </a> <!-- findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest -->
+                  <span class="method-name">findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSubscriptionsCountByUserAndStatusTest">
+                  </a> <!-- getSubscriptionsCountByUserAndStatusTest -->
+                  <span class="method-name">getSubscriptionsCountByUserAndStatusTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="isAlreadySubscribed">
+                  </a> <!-- isAlreadySubscribed -->
+                  <span class="method-name">isAlreadySubscribed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="processSubscriptionsTestWithNotValidData">
+                  </a> <!-- processSubscriptionsTestWithNotValidData -->
+                  <span class="method-name">processSubscriptionsTestWithNotValidData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Command line suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.suprun.periodicals.service.entity.SubscriptionBinTest&quot;/&gt;
+      &lt;class name=&quot;com.suprun.periodicals.service.PaymentServiceTest&quot;/&gt;
+      &lt;class name=&quot;com.suprun.periodicals.service.PeriodicalServiceTest&quot;/&gt;
+      &lt;class name=&quot;com.suprun.periodicals.service.PublisherServiceTest&quot;/&gt;
+      &lt;class name=&quot;com.suprun.periodicals.service.SubscriptionBinServiceTest&quot;/&gt;
+      &lt;class name=&quot;com.suprun.periodicals.service.SubscriptionServiceTest&quot;/&gt;
+      &lt;class name=&quot;com.suprun.periodicals.service.UserServiceTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (7 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(51);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'createPeriodicalTest')
+data.setCell(0, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(0, 3, 7100);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'registerUserWithValidParametersTest')
+data.setCell(1, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(1, 3, 540);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'signInWithCorrectEmailAndPasswordTest')
+data.setCell(2, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(2, 3, 242);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createPayment')
+data.setCell(3, 2, 'com.suprun.periodicals.service.PaymentServiceTest')
+data.setCell(3, 3, 216);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'signInWithWrongPasswordTest')
+data.setCell(4, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(4, 3, 114);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest')
+data.setCell(5, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
+data.setCell(5, 3, 37);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest')
+data.setCell(6, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
+data.setCell(6, 3, 31);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addItemToCartTest')
+data.setCell(7, 2, 'com.suprun.periodicals.service.SubscriptionBinServiceTest')
+data.setCell(7, 3, 30);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'findAllFrequenciesTest')
+data.setCell(8, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(8, 3, 23);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getItemsTest')
+data.setCell(9, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(9, 3, 22);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'findAllSubscriptionPlans')
+data.setCell(10, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
+data.setCell(10, 3, 19);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'addItemTest')
+data.setCell(11, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(11, 3, 16);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'removeItemInvalidIdTest')
+data.setCell(12, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(12, 3, 16);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'findPaymentByIdWithExistingPaymentTest')
+data.setCell(13, 2, 'com.suprun.periodicals.service.PaymentServiceTest')
+data.setCell(13, 3, 16);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'updateShoppingCartItemsFromDatabaseWithExceptionTest')
+data.setCell(14, 2, 'com.suprun.periodicals.service.SubscriptionBinServiceTest')
+data.setCell(14, 3, 16);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'getTotalPriceTest')
+data.setCell(15, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(15, 3, 15);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'findAllSubscriptionsByPaymentWithExistingSubscriptionsTest')
+data.setCell(16, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
+data.setCell(16, 3, 12);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'findAllPeriodicalTypesTest')
+data.setCell(17, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(17, 3, 10);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'removeAllItemFromCartTest')
+data.setCell(18, 2, 'com.suprun.periodicals.service.SubscriptionBinServiceTest')
+data.setCell(18, 3, 10);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'removeItemFromCartTest')
+data.setCell(19, 2, 'com.suprun.periodicals.service.SubscriptionBinServiceTest')
+data.setCell(19, 3, 10);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'signInWithNullEmailTest')
+data.setCell(20, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(20, 3, 9);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'updateShoppingCartItemsFromDatabaseTest')
+data.setCell(21, 2, 'com.suprun.periodicals.service.SubscriptionBinServiceTest')
+data.setCell(21, 3, 8);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'findAllPeriodicalsTest')
+data.setCell(22, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(22, 3, 7);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'findAllSubscriptionsByUserAndStatusTest')
+data.setCell(23, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
+data.setCell(23, 3, 6);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'findPaymentByIdWithNotExistingPaymentTest')
+data.setCell(24, 2, 'com.suprun.periodicals.service.PaymentServiceTest')
+data.setCell(24, 3, 6);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'findAllPublishersTest')
+data.setCell(25, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(25, 3, 6);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'findAllPeriodicalsByStatusTest')
+data.setCell(26, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(26, 3, 6);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'signInWithWrongEmailTest')
+data.setCell(27, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(27, 3, 6);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'getPeriodicalsCountByStatusTest')
+data.setCell(28, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(28, 3, 5);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'findUserByIdWithExistingUserTest')
+data.setCell(29, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(29, 3, 5);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'findUserByIdWithNotExistingUserTest')
+data.setCell(30, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(30, 3, 5);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'changeStatusOnAnotherStatusTest')
+data.setCell(31, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(31, 3, 5);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'getPaymentsCountTest')
+data.setCell(32, 2, 'com.suprun.periodicals.service.PaymentServiceTest')
+data.setCell(32, 3, 5);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest')
+data.setCell(33, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
+data.setCell(33, 3, 4);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'registerUserWithNullEmailTest')
+data.setCell(34, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(34, 3, 4);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'processSubscriptionsTestWithNotValidData')
+data.setCell(35, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
+data.setCell(35, 3, 4);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'findPeriodicalByIdWithExistingPeriodicalTest')
+data.setCell(36, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(36, 3, 4);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'findPeriodicalByIdWithNotExistingPeriodicalTest')
+data.setCell(37, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(37, 3, 4);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'updatePeriodicalTest')
+data.setCell(38, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(38, 3, 3);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'getPeriodicalsCountTest')
+data.setCell(39, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(39, 3, 3);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'signInWithNullPasswordTest')
+data.setCell(40, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(40, 3, 3);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'getSubscriptionsCountByUserAndStatusTest')
+data.setCell(41, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
+data.setCell(41, 3, 3);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'isAlreadySubscribed')
+data.setCell(42, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
+data.setCell(42, 3, 3);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'registerUserWithSameEmailTest')
+data.setCell(43, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(43, 3, 2);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'registerUserWithNullPasswordTest')
+data.setCell(44, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(44, 3, 2);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'changeStatusOnSameStatusTest')
+data.setCell(45, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(45, 3, 2);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'removeItemTest')
+data.setCell(46, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(46, 3, 0);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'findAllPaymentsTest')
+data.setCell(47, 2, 'com.suprun.periodicals.service.PaymentServiceTest')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'updateItemWithAnotherItemTest')
+data.setCell(48, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(48, 3, 0);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'isHasSuspendedPeriodicalTest')
+data.setCell(49, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(49, 3, 0);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'updateItemWithSameItemTest')
+data.setCell(50, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(50, 3, 0);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.suprun.periodicals.service.entity.SubscriptionBinTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addItemTest</span>
+                <span class="method-start">46 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">78 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getItemsTest</span>
+                <span class="method-start">78 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">100 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getTotalPriceTest</span>
+                <span class="method-start">100 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">isHasSuspendedPeriodicalTest</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">removeItemInvalidIdTest</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">131 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">removeItemTest</span>
+                <span class="method-start">131 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">131 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateItemWithAnotherItemTest</span>
+                <span class="method-start">131 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">131 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateItemWithSameItemTest</span>
+                <span class="method-start">131 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.suprun.periodicals.service.PaymentServiceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">147 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createPayment</span>
+                <span class="method-start">1183 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">1399 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllPaymentsTest</span>
+                <span class="method-start">1415 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">1431 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findPaymentByIdWithExistingPaymentTest</span>
+                <span class="method-start">1431 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">1449 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findPaymentByIdWithNotExistingPaymentTest</span>
+                <span class="method-start">1452 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">1461 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getPaymentsCountTest</span>
+                <span class="method-start">1465 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.suprun.periodicals.service.PeriodicalServiceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">1481 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeStatusOnAnotherStatusTest</span>
+                <span class="method-start">1651 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">1657 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">changeStatusOnSameStatusTest</span>
+                <span class="method-start">1660 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">1665 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createPeriodicalTest</span>
+                <span class="method-start">1669 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">8770 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllFrequenciesTest</span>
+                <span class="method-start">8778 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">8802 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllPeriodicalTypesTest</span>
+                <span class="method-start">8809 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">8822 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllPeriodicalsByStatusTest</span>
+                <span class="method-start">8825 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">8833 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllPeriodicalsTest</span>
+                <span class="method-start">8840 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">8848 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllPublishersTest</span>
+                <span class="method-start">8852 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">8868 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findPeriodicalByIdWithExistingPeriodicalTest</span>
+                <span class="method-start">8880 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">8886 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findPeriodicalByIdWithNotExistingPeriodicalTest</span>
+                <span class="method-start">8889 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">8895 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getPeriodicalsCountByStatusTest</span>
+                <span class="method-start">8898 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">8904 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getPeriodicalsCountTest</span>
+                <span class="method-start">8908 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">8912 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updatePeriodicalTest</span>
+                <span class="method-start">8914 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.suprun.periodicals.service.SubscriptionBinServiceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">8919 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addItemToCartTest</span>
+                <span class="method-start">8983 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9014 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">removeAllItemFromCartTest</span>
+                <span class="method-start">9015 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9027 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">removeItemFromCartTest</span>
+                <span class="method-start">9031 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9046 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateShoppingCartItemsFromDatabaseTest</span>
+                <span class="method-start">9050 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9060 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">updateShoppingCartItemsFromDatabaseWithExceptionTest</span>
+                <span class="method-start">9062 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.suprun.periodicals.service.SubscriptionServiceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9082 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllSubscriptionPlans</span>
+                <span class="method-start">9146 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9167 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllSubscriptionsByPaymentWithExistingSubscriptionsTest</span>
+                <span class="method-start">9169 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9183 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest</span>
+                <span class="method-start">9187 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9229 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findAllSubscriptionsByUserAndStatusTest</span>
+                <span class="method-start">9233 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9241 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest</span>
+                <span class="method-start">9244 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9284 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest</span>
+                <span class="method-start">9288 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9294 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getSubscriptionsCountByUserAndStatusTest</span>
+                <span class="method-start">9299 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9303 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">isAlreadySubscribed</span>
+                <span class="method-start">9305 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9310 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">processSubscriptionsTestWithNotValidData</span>
+                <span class="method-start">9313 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.suprun.periodicals.service.UserServiceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9319 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findUserByIdWithExistingUserTest</span>
+                <span class="method-start">9345 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9352 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">findUserByIdWithNotExistingUserTest</span>
+                <span class="method-start">9354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9366 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerUserWithNullEmailTest</span>
+                <span class="method-start">9387 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9393 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerUserWithNullPasswordTest</span>
+                <span class="method-start">9395 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9398 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerUserWithSameEmailTest</span>
+                <span class="method-start">9400 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9403 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerUserWithValidParametersTest</span>
+                <span class="method-start">9405 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">9946 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signInWithCorrectEmailAndPasswordTest</span>
+                <span class="method-start">9948 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">10193 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signInWithNullEmailTest</span>
+                <span class="method-start">10200 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">10211 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signInWithNullPasswordTest</span>
+                <span class="method-start">10214 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">10219 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signInWithWrongEmailTest</span>
+                <span class="method-start">10241 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">10248 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signInWithWrongPasswordTest</span>
+                <span class="method-start">10251 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

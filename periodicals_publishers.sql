@@ -1,0 +1,17 @@
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (4, 'АО "АС РУС МЕДИА"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (6, 'АО "Бизнес Ньюс Медиа"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (2, 'АО "Коммерсантъ"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (5, 'АО "РОСБИЗНЕСКОНСАЛТИНГ"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (7, 'ЗАО "Медиарынок"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (1, 'Издательский дом "Звезда"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (3, 'ООО "Аргументы и факты в Белорусси"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (11, 'ООО "БЕЛГАЗЕТА"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (13, 'ООО "Газета "Теленеделя"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (8, 'ООО "Прессбол-91"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (15, 'ООО "Форвард Медиа Групп"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (14, 'ООО "Фэшн Пресс"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (17, 'ООО "Хёрст Шкулёв Паблишинг"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (16, 'ООО "Ясно Паблишинг"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (12, 'Редакция газеты "Спортивная панорама"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (9, 'Учреждение "Научно-исследовательский институт труда Министерства труда и социальной защиты Республики Беларусь"');
+INSERT INTO periodicals.publishers (publisher_id, publisher_name) VALUES (10, 'Учреждение "Научно-исследовательский экономический институт Министерства экономики Республики Беларусь"');

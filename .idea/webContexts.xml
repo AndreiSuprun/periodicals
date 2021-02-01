@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminCatalog.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/paymentOverview.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/payments.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/periodicalCreate.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/periodicalEdit.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/user.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/errors/400.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/errors" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/errors/404.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/errors" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/footer.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/head.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/header.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/navbar.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments/periodicalForm.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/fragments" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/catalog.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/periodical.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/periodicals.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main/signin.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/bin.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,334 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>51/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jan 31 16:23:22 MSK 2021</td>
+</tr>
+<tr><td>Total time:</td><td>10 seconds (10467 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.suprun.periodicals.service.entity.SubscriptionBinTest.addItemTest()'><b>addItemTest</b><br>Test class: com.suprun.periodicals.service.entity.SubscriptionBinTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.SubscriptionBinServiceTest.addItemToCartTest()'><b>addItemToCartTest</b><br>Test class: com.suprun.periodicals.service.SubscriptionBinServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.SubscriptionBinServiceTest@ca30bc1</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PeriodicalServiceTest.changeStatusOnAnotherStatusTest()'><b>changeStatusOnAnotherStatusTest</b><br>Test class: com.suprun.periodicals.service.PeriodicalServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PeriodicalServiceTest.changeStatusOnSameStatusTest()'><b>changeStatusOnSameStatusTest</b><br>Test class: com.suprun.periodicals.service.PeriodicalServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PaymentServiceTest.createPayment()'><b>createPayment</b><br>Test class: com.suprun.periodicals.service.PaymentServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PaymentServiceTest@7efaad5a</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PeriodicalServiceTest.createPeriodicalTest()'><b>createPeriodicalTest</b><br>Test class: com.suprun.periodicals.service.PeriodicalServiceTest</td>
+<td></td>
+<td>7</td>
+<td>com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PeriodicalServiceTest.findAllFrequenciesTest()'><b>findAllFrequenciesTest</b><br>Test class: com.suprun.periodicals.service.PeriodicalServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PaymentServiceTest.findAllPaymentsTest()'><b>findAllPaymentsTest</b><br>Test class: com.suprun.periodicals.service.PaymentServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PaymentServiceTest@7efaad5a</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PeriodicalServiceTest.findAllPeriodicalTypesTest()'><b>findAllPeriodicalTypesTest</b><br>Test class: com.suprun.periodicals.service.PeriodicalServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PeriodicalServiceTest.findAllPeriodicalsByStatusTest()'><b>findAllPeriodicalsByStatusTest</b><br>Test class: com.suprun.periodicals.service.PeriodicalServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PeriodicalServiceTest.findAllPeriodicalsTest()'><b>findAllPeriodicalsTest</b><br>Test class: com.suprun.periodicals.service.PeriodicalServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PeriodicalServiceTest.findAllPublishersTest()'><b>findAllPublishersTest</b><br>Test class: com.suprun.periodicals.service.PeriodicalServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.SubscriptionServiceTest.findAllSubscriptionPlans()'><b>findAllSubscriptionPlans</b><br>Test class: com.suprun.periodicals.service.SubscriptionServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.SubscriptionServiceTest@1046d517</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.SubscriptionServiceTest.findAllSubscriptionsByPaymentWithExistingSubscriptionsTest()'><b>findAllSubscriptionsByPaymentWithExistingSubscriptionsTest</b><br>Test class: com.suprun.periodicals.service.SubscriptionServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.SubscriptionServiceTest@1046d517</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.SubscriptionServiceTest.findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest()'><b>findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest</b><br>Test class: com.suprun.periodicals.service.SubscriptionServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.SubscriptionServiceTest@1046d517</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.SubscriptionServiceTest.findAllSubscriptionsByUserAndStatusTest()'><b>findAllSubscriptionsByUserAndStatusTest</b><br>Test class: com.suprun.periodicals.service.SubscriptionServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.SubscriptionServiceTest@1046d517</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PaymentServiceTest.findPaymentByIdWithExistingPaymentTest()'><b>findPaymentByIdWithExistingPaymentTest</b><br>Test class: com.suprun.periodicals.service.PaymentServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PaymentServiceTest@7efaad5a</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PaymentServiceTest.findPaymentByIdWithNotExistingPaymentTest()'><b>findPaymentByIdWithNotExistingPaymentTest</b><br>Test class: com.suprun.periodicals.service.PaymentServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PaymentServiceTest@7efaad5a</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PeriodicalServiceTest.findPeriodicalByIdWithExistingPeriodicalTest()'><b>findPeriodicalByIdWithExistingPeriodicalTest</b><br>Test class: com.suprun.periodicals.service.PeriodicalServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PeriodicalServiceTest.findPeriodicalByIdWithNotExistingPeriodicalTest()'><b>findPeriodicalByIdWithNotExistingPeriodicalTest</b><br>Test class: com.suprun.periodicals.service.PeriodicalServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.SubscriptionServiceTest.findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest()'><b>findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest</b><br>Test class: com.suprun.periodicals.service.SubscriptionServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.SubscriptionServiceTest@1046d517</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.SubscriptionServiceTest.findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest()'><b>findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest</b><br>Test class: com.suprun.periodicals.service.SubscriptionServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.SubscriptionServiceTest@1046d517</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.UserServiceTest.findUserByIdWithExistingUserTest()'><b>findUserByIdWithExistingUserTest</b><br>Test class: com.suprun.periodicals.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.UserServiceTest@3b7d3a38</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.UserServiceTest.findUserByIdWithNotExistingUserTest()'><b>findUserByIdWithNotExistingUserTest</b><br>Test class: com.suprun.periodicals.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.UserServiceTest@3b7d3a38</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.entity.SubscriptionBinTest.getItemsTest()'><b>getItemsTest</b><br>Test class: com.suprun.periodicals.service.entity.SubscriptionBinTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PaymentServiceTest.getPaymentsCountTest()'><b>getPaymentsCountTest</b><br>Test class: com.suprun.periodicals.service.PaymentServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PaymentServiceTest@7efaad5a</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PeriodicalServiceTest.getPeriodicalsCountByStatusTest()'><b>getPeriodicalsCountByStatusTest</b><br>Test class: com.suprun.periodicals.service.PeriodicalServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PeriodicalServiceTest.getPeriodicalsCountTest()'><b>getPeriodicalsCountTest</b><br>Test class: com.suprun.periodicals.service.PeriodicalServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.SubscriptionServiceTest.getSubscriptionsCountByUserAndStatusTest()'><b>getSubscriptionsCountByUserAndStatusTest</b><br>Test class: com.suprun.periodicals.service.SubscriptionServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.SubscriptionServiceTest@1046d517</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.entity.SubscriptionBinTest.getTotalPriceTest()'><b>getTotalPriceTest</b><br>Test class: com.suprun.periodicals.service.entity.SubscriptionBinTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.SubscriptionServiceTest.isAlreadySubscribed()'><b>isAlreadySubscribed</b><br>Test class: com.suprun.periodicals.service.SubscriptionServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.SubscriptionServiceTest@1046d517</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.entity.SubscriptionBinTest.isHasSuspendedPeriodicalTest()'><b>isHasSuspendedPeriodicalTest</b><br>Test class: com.suprun.periodicals.service.entity.SubscriptionBinTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.SubscriptionServiceTest.processSubscriptionsTestWithNotValidData()'><b>processSubscriptionsTestWithNotValidData</b><br>Test class: com.suprun.periodicals.service.SubscriptionServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.SubscriptionServiceTest@1046d517</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.UserServiceTest.registerUserWithNullEmailTest()'><b>registerUserWithNullEmailTest</b><br>Test class: com.suprun.periodicals.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.UserServiceTest@3b7d3a38</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.UserServiceTest.registerUserWithNullPasswordTest()'><b>registerUserWithNullPasswordTest</b><br>Test class: com.suprun.periodicals.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.UserServiceTest@3b7d3a38</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.UserServiceTest.registerUserWithSameEmailTest()'><b>registerUserWithSameEmailTest</b><br>Test class: com.suprun.periodicals.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.UserServiceTest@3b7d3a38</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.UserServiceTest.registerUserWithValidParametersTest()'><b>registerUserWithValidParametersTest</b><br>Test class: com.suprun.periodicals.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.UserServiceTest@3b7d3a38</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.SubscriptionBinServiceTest.removeAllItemFromCartTest()'><b>removeAllItemFromCartTest</b><br>Test class: com.suprun.periodicals.service.SubscriptionBinServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.SubscriptionBinServiceTest@ca30bc1</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.SubscriptionBinServiceTest.removeItemFromCartTest()'><b>removeItemFromCartTest</b><br>Test class: com.suprun.periodicals.service.SubscriptionBinServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.SubscriptionBinServiceTest@ca30bc1</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.entity.SubscriptionBinTest.removeItemInvalidIdTest()'><b>removeItemInvalidIdTest</b><br>Test class: com.suprun.periodicals.service.entity.SubscriptionBinTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.entity.SubscriptionBinTest.removeItemTest()'><b>removeItemTest</b><br>Test class: com.suprun.periodicals.service.entity.SubscriptionBinTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.UserServiceTest.signInWithCorrectEmailAndPasswordTest()'><b>signInWithCorrectEmailAndPasswordTest</b><br>Test class: com.suprun.periodicals.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.UserServiceTest@3b7d3a38</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.UserServiceTest.signInWithNullEmailTest()'><b>signInWithNullEmailTest</b><br>Test class: com.suprun.periodicals.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.UserServiceTest@3b7d3a38</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.UserServiceTest.signInWithNullPasswordTest()'><b>signInWithNullPasswordTest</b><br>Test class: com.suprun.periodicals.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.UserServiceTest@3b7d3a38</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.UserServiceTest.signInWithWrongEmailTest()'><b>signInWithWrongEmailTest</b><br>Test class: com.suprun.periodicals.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.UserServiceTest@3b7d3a38</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.UserServiceTest.signInWithWrongPasswordTest()'><b>signInWithWrongPasswordTest</b><br>Test class: com.suprun.periodicals.service.UserServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.UserServiceTest@3b7d3a38</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.entity.SubscriptionBinTest.updateItemWithAnotherItemTest()'><b>updateItemWithAnotherItemTest</b><br>Test class: com.suprun.periodicals.service.entity.SubscriptionBinTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.entity.SubscriptionBinTest.updateItemWithSameItemTest()'><b>updateItemWithSameItemTest</b><br>Test class: com.suprun.periodicals.service.entity.SubscriptionBinTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.PeriodicalServiceTest.updatePeriodicalTest()'><b>updatePeriodicalTest</b><br>Test class: com.suprun.periodicals.service.PeriodicalServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.SubscriptionBinServiceTest.updateShoppingCartItemsFromDatabaseTest()'><b>updateShoppingCartItemsFromDatabaseTest</b><br>Test class: com.suprun.periodicals.service.SubscriptionBinServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.SubscriptionBinServiceTest@ca30bc1</td></tr>
+<tr>
+<td title='com.suprun.periodicals.service.SubscriptionBinServiceTest.updateShoppingCartItemsFromDatabaseWithExceptionTest()'><b>updateShoppingCartItemsFromDatabaseWithExceptionTest</b><br>Test class: com.suprun.periodicals.service.SubscriptionBinServiceTest</td>
+<td></td>
+<td>0</td>
+<td>com.suprun.periodicals.service.SubscriptionBinServiceTest@ca30bc1</td></tr>
+</table><p>
+</body>
+</html>

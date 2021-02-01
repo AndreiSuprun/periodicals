@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Properties>
+        <Property name="serverLogsFilepath">$${log4j:configParentLocation}/logs/</Property>
+        <Property name="pattern">%d{yyyy-MM-dd HH:mm:ss.SSS} - %-5p: [%t] %c{}:%L - %m%n</Property>
+    </Properties>
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+           <PatternLayout pattern="${pattern}"/>
+        </Console>
+        <RollingFile name="SERVER_LOGS_FILE" ignoreExceptions="false"
+                     filePattern="${serverLogsFilepath}/periodicals.%d{yyyy-MM-dd}-%i.log.gz"
+                     fileName="${serverLogsFilepath}/periodicals.log">
+            <ThresholdFilter onMismatch="DENY" onMatch="ACCEPT" level="ERROR"/>
+            <PatternLayout pattern="${pattern}"/>
+            <Policies>
+                <OnStartupTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="ERROR">
+            <AppenderRef ref="SERVER_LOGS_FILE"/>
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+        <Logger name="com.suprun.periodicals" level="DEBUG" additivity="false">
+            <AppenderRef ref="SERVER_LOGS_FILE"/>
+            <AppenderRef ref="STDOUT"/>
+        </Logger>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,2 @@
+2021-01-31 16:23:31.623 - ERROR: [main] com.suprun.periodicals.service.SubscriptionBinService:67 - A subscription cannot refer to a non-existent periodical
+2021-01-31 16:23:31.758 - ERROR: [main] com.suprun.periodicals.service.SubscriptionService:66 - Payment cannot exist without subscription: Payment[id=1, user=null, totalPrice=null, isPaid=false, paymentDate=null]
