@@ -72,11 +72,8 @@ public class UserService {
         } catch (DaoException e) {
             throw new ServiceException(e);
         }
-        return user.map(u -> {
-            u.setPassword(null);
-            ;
-            return u;
-        });
+        user.ifPresent(value -> value.setPassword(null));
+        return user;
     }
 
     public boolean registerUser(User user) throws ServiceException {
