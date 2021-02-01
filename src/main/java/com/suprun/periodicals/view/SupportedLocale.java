@@ -23,6 +23,11 @@ public enum SupportedLocale {
         return locale;
     }
 
+    /**
+     * Get default locale
+     *
+     * @return default locale
+     */
     public static Locale getDefault() {
         return DEFAULT_LOCALE;
     }
@@ -42,6 +47,11 @@ public enum SupportedLocale {
                 .orElse(getDefault());
     }
 
+    /**
+     * Get supported languages
+     *
+     * @return List of supported languages
+     */
     public static List<String> getSupportedLanguages() {
         return Arrays.stream(SupportedLocale.values())
                 .map(x -> x.getLocale().getLanguage())

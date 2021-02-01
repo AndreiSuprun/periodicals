@@ -2,6 +2,8 @@ package com.suprun.periodicals.dao;
 
 /**
  * Artificial exception that should be thrown out of the DAO layer
+ *
+ * @author Andrei Suprun
  */
 public class DaoException extends Exception{
 

@@ -12,6 +12,11 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Objects;
 
+/**
+ * Util class for view part of application
+ *
+ * @author Andrei Suprun
+ */
 public class ViewUtil {
 
     private static final String EMPTY_SIGN = "";

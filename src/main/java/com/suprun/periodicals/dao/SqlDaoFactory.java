@@ -3,7 +3,7 @@ package com.suprun.periodicals.dao;
 import com.suprun.periodicals.dao.impl.*;
 
 /**
- * Facnory class for Dao entities interfaces.
+ * Factory class for Dao entities interfaces.
  *
  * @author Andrei Suprun
  */

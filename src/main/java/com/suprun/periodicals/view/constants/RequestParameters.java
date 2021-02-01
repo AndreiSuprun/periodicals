@@ -3,7 +3,7 @@ package com.suprun.periodicals.view.constants;
 import com.suprun.periodicals.util.Resource;
 
 /**
- * Constants which relates to parameters in HttpServletRequest
+ * Constants which relate to parameters in HttpServletRequest
  */
 public final class RequestParameters {
 

@@ -3,8 +3,9 @@ package com.suprun.periodicals.dao;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Optional;
+
 /**
- * Common interface for all dao.
+ * Common interface for all DAOs.
  *
  * @param <T>  represents type of domain object
  * @param <ID> represents type of identifier
@@ -58,7 +59,7 @@ public interface GenericDao<T, ID extends Serializable> {
     void delete(ID id) throws DaoException;
 
     /**
-     * Check object's existing in database.
+     * Check if object exists in database.
      *
      * @param id identifier of the object.
      * @return {@code true} if exists else {@code false}

@@ -3,7 +3,7 @@ package com.suprun.periodicals.view.constants;
 import com.suprun.periodicals.util.Resource;
 
 /**
- * Constants which relates to view part
+ * Constants which relate to view part
  */
 public final class Attributes {
     public static final String USER = Resource.ATTRIBUTE.getProperty("user");

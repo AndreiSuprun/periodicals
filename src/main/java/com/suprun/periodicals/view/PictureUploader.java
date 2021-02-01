@@ -12,6 +12,11 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.UUID;
 
+/**
+ * Class for picture file upload processing
+ *
+ * @author Andrei Suprun
+ */
 public class PictureUploader {
 
     private static final String PART_NAME = "picture";
@@ -20,18 +25,30 @@ public class PictureUploader {
     private static final String CONTENT_DISPOSITION = "content-disposition";
     private static final String ESCAPED_QUOTATION = "\"";
     private static final String EMPTY_STRING = "";
-
     private static final char EQUAL_SIGN = '=';
     private static final char SLASH_SIGN = '/';
-    private static final char ESCAPED_BACK_SLASH = '\\';
     private static final char DOT = '.';
-    private static final String UPLOAD_DIRECTORY = Resource.FILE_UPLOAD.getProperty("upload.path");
 
+    /**
+     * Receiving input stream from HttpServletRequest
+     *
+     * @param request HttpServletRequest
+     * @return InputStream input stream of file
+     * @throws IOException
+     * @throws ServletException
+     */
     public static InputStream receiveInputStream(HttpServletRequest request) throws IOException, ServletException {
         Part part = request.getPart(PART_NAME);
         return part.getInputStream();
     }
 
+    /**
+     * Generate file name using UUID generator
+     *
+     * @param fileExtension extension of uploaded file
+     * @return generated file name
+     * @throws IOException
+     */
     public static String receiveFileName(String fileExtension) throws IOException {
         if (fileExtension == null) {
             return null;
@@ -41,6 +58,14 @@ public class PictureUploader {
         return fileName;
     }
 
+    /**
+     * Receiving file extension from HttpServletRequest
+     *
+     * @param request HttpServletRequest
+     * @return extension of the uploaded file
+     * @throws IOException
+     * @throws ServletException
+     */
     public static String getFileExtension(HttpServletRequest request) throws IOException, ServletException {
         Part part = request.getPart(PART_NAME);
             for (String cd : part.getHeader(CONTENT_DISPOSITION).split(SEMICOLON)) {

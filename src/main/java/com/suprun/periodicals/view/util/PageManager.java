@@ -5,7 +5,7 @@ import com.suprun.periodicals.util.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * Class that is needed to carry information for views that do objects pagination
+ * Class for supporting pagination
  *
  * @author Andrei Suprun
  */

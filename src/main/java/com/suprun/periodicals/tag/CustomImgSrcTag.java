@@ -15,8 +15,8 @@ import java.nio.file.Paths;
 import java.util.Base64;
 
 /**
- * Business logic of custom tag.
- * Sends to jsp base64 encoded picture.
+ * Business logic for custom tag.
+ * Sends base64 encoded picture to jsp.
  *
  * @author Andrei Suprun
  */

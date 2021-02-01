@@ -21,7 +21,7 @@ public class PictureService {
     private static final String SLASH = "/";
 
     /**
-     * Get shopping cart for user
+     * Upload file to local storage
      *
      * @param inputStream file input stream
      * @param fileName path to file
