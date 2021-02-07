@@ -21,7 +21,6 @@ public class Payment implements Serializable {
     private Long id;
     private User user;
     private BigDecimal totalPrice;
-    private boolean paid;
     private LocalDateTime paymentDate;
 
     public static class Builder {
@@ -43,11 +42,6 @@ public class Payment implements Serializable {
 
         public Builder setTotalPrice(BigDecimal totalPrice) {
             payment.setTotalPrice(totalPrice);
-            return this;
-        }
-
-        public Builder setPaid(boolean isPaid) {
-            payment.setPaid(isPaid);
             return this;
         }
 
@@ -92,14 +86,6 @@ public class Payment implements Serializable {
         this.totalPrice = totalPrice;
     }
 
-    public void setPaid(boolean isPaid){
-        this.paid = isPaid;
-    }
-
-    public boolean isPaid() {
-        return paid;
-    }
-
     public LocalDateTime getPaymentDate() {
         return paymentDate;
     }
@@ -115,7 +101,6 @@ public class Payment implements Serializable {
 
         Payment payment = (Payment) o;
 
-        if (paid != payment.paid) return false;
         if (id != null ? !id.equals(payment.id) : payment.id != null) return false;
         if (user != null ? !user.equals(payment.user) : payment.user != null)
             return false;
@@ -128,7 +113,6 @@ public class Payment implements Serializable {
         int result = id != null ? id.hashCode() : 0;
         result = 31 * result + (user != null ? user.hashCode() : 0);
         result = 31 * result + (totalPrice != null ? totalPrice.hashCode() : 0);
-        result = 31 * result + (paid ? 1 : 0);
         result = 31 * result + (paymentDate != null ? paymentDate.hashCode() : 0);
         return result;
     }
@@ -139,7 +123,6 @@ public class Payment implements Serializable {
                 .add("id=" + id)
                 .add("user=" + user)
                 .add("totalPrice=" + totalPrice)
-                .add("isPaid=" + paid)
                 .add("paymentDate=" + paymentDate)
                 .toString();
     }
