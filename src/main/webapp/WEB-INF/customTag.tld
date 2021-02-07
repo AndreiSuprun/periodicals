@@ -12,7 +12,7 @@
     <tag>
         <description>This tag supplies 64Base encoded img tag source</description>
         <name>imgSrc</name>
-        <tag-class>com.suprun.periodicals.tag.CustomImgSrcTag</tag-class>
+        <tag-class>com.suprun.periodicals.view.tag.CustomImgSrcTag</tag-class>
         <body-content>empty</body-content>
 
         <attribute>

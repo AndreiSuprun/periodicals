@@ -30,7 +30,7 @@ import java.sql.SQLException;
  * @author Andrei Suprun
  * @see CommandResult
  */
-@MultipartConfig
+@MultipartConfig(maxFileSize = 1024*1024)
 public class FrontController extends HttpServlet {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(FrontController.class);

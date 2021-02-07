@@ -1,11 +1,9 @@
-package com.suprun.periodicals.tag;
+package com.suprun.periodicals.view.tag;
 
-import com.suprun.periodicals.service.PublisherService;
 import com.suprun.periodicals.util.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspWriter;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 import java.io.*;
