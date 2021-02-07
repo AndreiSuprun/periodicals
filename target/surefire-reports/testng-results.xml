@@ -1,427 +1,539 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="51" passed="51" failed="0" skipped="0">
+<testng-results ignored="0" total="51" passed="49" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-31T16:23:22 MSK" name="Command line suite" finished-at="2021-01-31T16:23:32 MSK" duration-ms="10467">
+  <suite started-at="2021-02-03T10:22:29 MSK" name="Command line suite" finished-at="2021-02-03T10:22:31 MSK" duration-ms="2097">
     <groups>
     </groups>
-    <test started-at="2021-01-31T16:23:22 MSK" name="Command line test" finished-at="2021-01-31T16:23:32 MSK" duration-ms="10467">
+    <test started-at="2021-02-03T10:22:29 MSK" name="Command line test" finished-at="2021-02-03T10:22:31 MSK" duration-ms="2097">
       <class name="com.suprun.periodicals.service.PeriodicalServiceTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:24 MSK" name="init" finished-at="2021-01-31T16:23:24 MSK" duration-ms="169" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:29 MSK" name="init" finished-at="2021-02-03T10:22:29 MSK" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="changeStatusOnAnotherStatusTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:24 MSK" name="changeStatusOnAnotherStatusTest" finished-at="2021-01-31T16:23:24 MSK" duration-ms="5" status="PASS">
+        <test-method signature="changeStatusOnAnotherStatusTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:29 MSK" name="changeStatusOnAnotherStatusTest" finished-at="2021-02-03T10:22:29 MSK" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeStatusOnAnotherStatusTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:24 MSK" name="init" finished-at="2021-01-31T16:23:24 MSK" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:29 MSK" name="init" finished-at="2021-02-03T10:22:29 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="changeStatusOnSameStatusTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:24 MSK" name="changeStatusOnSameStatusTest" finished-at="2021-01-31T16:23:24 MSK" duration-ms="2" status="PASS">
+        <test-method signature="changeStatusOnSameStatusTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:29 MSK" name="changeStatusOnSameStatusTest" finished-at="2021-02-03T10:22:29 MSK" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- changeStatusOnSameStatusTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:24 MSK" name="init" finished-at="2021-01-31T16:23:24 MSK" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:29 MSK" name="init" finished-at="2021-02-03T10:22:29 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="createPeriodicalTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:24 MSK" name="createPeriodicalTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="7100" status="PASS">
+        <test-method signature="createPeriodicalTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:29 MSK" name="createPeriodicalTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1324" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.suprun.periodicals.dao.connection.ConnectionPool.getConnection(ConnectionPool.java:95)
+at com.suprun.periodicals.dao.connection.ConnectionProxy.getConnection(ConnectionProxy.java:47)
+at com.suprun.periodicals.dao.transaction.TransactionSupport.initConnection(TransactionSupport.java:130)
+at com.suprun.periodicals.dao.transaction.TransactionSupport.prepareConnectionForTransaction(TransactionSupport.java:48)
+at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:62)
+at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:46)
+at com.suprun.periodicals.service.PeriodicalService.createPeriodical(PeriodicalService.java:55)
+at com.suprun.periodicals.service.PeriodicalServiceTest.createPeriodicalTest(PeriodicalServiceTest.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Suppressed: java.lang.NullPointerException
+at com.suprun.periodicals.dao.transaction.TransactionSupport.close(TransactionSupport.java:116)
+at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:58)
+... 41 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPeriodicalTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findAllFrequenciesTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="findAllFrequenciesTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="23" status="PASS">
+        <test-method signature="findAllFrequenciesTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="findAllFrequenciesTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findAllFrequenciesTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findAllPeriodicalTypesTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="findAllPeriodicalTypesTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="10" status="PASS">
+        <test-method signature="findAllPeriodicalTypesTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="findAllPeriodicalTypesTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findAllPeriodicalTypesTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findAllPeriodicalsByStatusTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="findAllPeriodicalsByStatusTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="6" status="PASS">
+        <test-method signature="findAllPeriodicalsByStatusTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="findAllPeriodicalsByStatusTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findAllPeriodicalsByStatusTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findAllPeriodicalsTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="findAllPeriodicalsTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="7" status="PASS">
+        <test-method signature="findAllPeriodicalsTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="findAllPeriodicalsTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findAllPeriodicalsTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findAllPublishersTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="findAllPublishersTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="6" status="PASS">
+        <test-method signature="findAllPublishersTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="findAllPublishersTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findAllPublishersTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findPeriodicalByIdWithExistingPeriodicalTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="findPeriodicalByIdWithExistingPeriodicalTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="4" status="PASS">
+        <test-method signature="findPeriodicalByIdWithExistingPeriodicalTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="findPeriodicalByIdWithExistingPeriodicalTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findPeriodicalByIdWithExistingPeriodicalTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findPeriodicalByIdWithNotExistingPeriodicalTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="findPeriodicalByIdWithNotExistingPeriodicalTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="4" status="PASS">
+        <test-method signature="findPeriodicalByIdWithNotExistingPeriodicalTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="findPeriodicalByIdWithNotExistingPeriodicalTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findPeriodicalByIdWithNotExistingPeriodicalTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="getPeriodicalsCountByStatusTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="getPeriodicalsCountByStatusTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="5" status="PASS">
+        <test-method signature="getPeriodicalsCountByStatusTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="getPeriodicalsCountByStatusTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPeriodicalsCountByStatusTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="getPeriodicalsCountTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="getPeriodicalsCountTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="3" status="PASS">
+        <test-method signature="getPeriodicalsCountTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="getPeriodicalsCountTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPeriodicalsCountTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="updatePeriodicalTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@291a7e3c]" started-at="2021-01-31T16:23:31 MSK" name="updatePeriodicalTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="3" status="PASS">
+        <test-method signature="updatePeriodicalTest()[pri:0, instance:com.suprun.periodicals.service.PeriodicalServiceTest@3adcc812]" started-at="2021-02-03T10:22:31 MSK" name="updatePeriodicalTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.suprun.periodicals.dao.connection.ConnectionPool.getConnection(ConnectionPool.java:95)
+at com.suprun.periodicals.dao.connection.ConnectionProxy.getConnection(ConnectionProxy.java:47)
+at com.suprun.periodicals.dao.transaction.TransactionSupport.initConnection(TransactionSupport.java:130)
+at com.suprun.periodicals.dao.transaction.TransactionSupport.prepareConnectionForTransaction(TransactionSupport.java:48)
+at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:62)
+at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:46)
+at com.suprun.periodicals.service.PeriodicalService.updatePeriodical(PeriodicalService.java:78)
+at com.suprun.periodicals.service.PeriodicalServiceTest.updatePeriodicalTest(PeriodicalServiceTest.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Suppressed: java.lang.NullPointerException
+at com.suprun.periodicals.dao.transaction.TransactionSupport.close(TransactionSupport.java:116)
+at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:58)
+... 41 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updatePeriodicalTest -->
       </class> <!-- com.suprun.periodicals.service.PeriodicalServiceTest -->
       <class name="com.suprun.periodicals.service.PaymentServiceTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@7efaad5a]" started-at="2021-01-31T16:23:22 MSK" name="init" finished-at="2021-01-31T16:23:23 MSK" duration-ms="1036" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@6ccdb29f]" started-at="2021-02-03T10:22:29 MSK" name="init" finished-at="2021-02-03T10:22:29 MSK" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="createPayment()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@7efaad5a]" started-at="2021-01-31T16:23:23 MSK" name="createPayment" finished-at="2021-01-31T16:23:23 MSK" duration-ms="216" status="PASS">
+        <test-method signature="createPayment()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@6ccdb29f]" started-at="2021-02-03T10:22:29 MSK" name="createPayment" finished-at="2021-02-03T10:22:29 MSK" duration-ms="45" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPayment -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@7efaad5a]" started-at="2021-01-31T16:23:23 MSK" name="init" finished-at="2021-01-31T16:23:23 MSK" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@6ccdb29f]" started-at="2021-02-03T10:22:29 MSK" name="init" finished-at="2021-02-03T10:22:29 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findAllPaymentsTest()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@7efaad5a]" started-at="2021-01-31T16:23:23 MSK" name="findAllPaymentsTest" finished-at="2021-01-31T16:23:23 MSK" duration-ms="0" status="PASS">
+        <test-method signature="findAllPaymentsTest()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@6ccdb29f]" started-at="2021-02-03T10:22:29 MSK" name="findAllPaymentsTest" finished-at="2021-02-03T10:22:29 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findAllPaymentsTest -->
-        <test-method signature="findPaymentByIdWithExistingPaymentTest()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@7efaad5a]" started-at="2021-01-31T16:23:23 MSK" name="findPaymentByIdWithExistingPaymentTest" finished-at="2021-01-31T16:23:23 MSK" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@6ccdb29f]" started-at="2021-02-03T10:22:29 MSK" name="init" finished-at="2021-02-03T10:22:29 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="findPaymentByIdWithExistingPaymentTest()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@6ccdb29f]" started-at="2021-02-03T10:22:29 MSK" name="findPaymentByIdWithExistingPaymentTest" finished-at="2021-02-03T10:22:29 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findPaymentByIdWithExistingPaymentTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@7efaad5a]" started-at="2021-01-31T16:23:23 MSK" name="init" finished-at="2021-01-31T16:23:23 MSK" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@6ccdb29f]" started-at="2021-02-03T10:22:29 MSK" name="init" finished-at="2021-02-03T10:22:29 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@7efaad5a]" started-at="2021-01-31T16:23:23 MSK" name="init" finished-at="2021-01-31T16:23:24 MSK" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="findPaymentByIdWithNotExistingPaymentTest()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@7efaad5a]" started-at="2021-01-31T16:23:24 MSK" name="findPaymentByIdWithNotExistingPaymentTest" finished-at="2021-01-31T16:23:24 MSK" duration-ms="6" status="PASS">
+        <test-method signature="findPaymentByIdWithNotExistingPaymentTest()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@6ccdb29f]" started-at="2021-02-03T10:22:29 MSK" name="findPaymentByIdWithNotExistingPaymentTest" finished-at="2021-02-03T10:22:29 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findPaymentByIdWithNotExistingPaymentTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@7efaad5a]" started-at="2021-01-31T16:23:24 MSK" name="init" finished-at="2021-01-31T16:23:24 MSK" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="getPaymentsCountTest()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@7efaad5a]" started-at="2021-01-31T16:23:24 MSK" name="getPaymentsCountTest" finished-at="2021-01-31T16:23:24 MSK" duration-ms="5" status="PASS">
+        <test-method signature="getPaymentsCountTest()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@6ccdb29f]" started-at="2021-02-03T10:22:29 MSK" name="getPaymentsCountTest" finished-at="2021-02-03T10:22:29 MSK" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getPaymentsCountTest -->
-      </class> <!-- com.suprun.periodicals.service.PaymentServiceTest -->
-      <class name="com.suprun.periodicals.service.UserServiceTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.PaymentServiceTest@6ccdb29f]" started-at="2021-02-03T10:22:29 MSK" name="init" finished-at="2021-02-03T10:22:29 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findUserByIdWithExistingUserTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:31 MSK" name="findUserByIdWithExistingUserTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="5" status="PASS">
+      </class> <!-- com.suprun.periodicals.service.PaymentServiceTest -->
+      <class name="com.suprun.periodicals.service.UserServiceTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="findUserByIdWithExistingUserTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="findUserByIdWithExistingUserTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findUserByIdWithExistingUserTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findUserByIdWithNotExistingUserTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:31 MSK" name="findUserByIdWithNotExistingUserTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="5" status="PASS">
+        <test-method signature="findUserByIdWithNotExistingUserTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="findUserByIdWithNotExistingUserTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findUserByIdWithNotExistingUserTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="registerUserWithNullEmailTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:31 MSK" name="registerUserWithNullEmailTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="4" status="PASS">
+        <test-method signature="registerUserWithNullEmailTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="registerUserWithNullEmailTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerUserWithNullEmailTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="registerUserWithNullPasswordTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:31 MSK" name="registerUserWithNullPasswordTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="2" status="PASS">
+        <test-method signature="registerUserWithNullPasswordTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="registerUserWithNullPasswordTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerUserWithNullPasswordTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="registerUserWithSameEmailTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:31 MSK" name="registerUserWithSameEmailTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="2" status="PASS">
+        <test-method signature="registerUserWithSameEmailTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="registerUserWithSameEmailTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerUserWithSameEmailTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="registerUserWithValidParametersTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:31 MSK" name="registerUserWithValidParametersTest" finished-at="2021-01-31T16:23:32 MSK" duration-ms="540" status="PASS">
+        <test-method signature="registerUserWithValidParametersTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="registerUserWithValidParametersTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerUserWithValidParametersTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:32 MSK" name="init" finished-at="2021-01-31T16:23:32 MSK" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="signInWithCorrectEmailAndPasswordTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:32 MSK" name="signInWithCorrectEmailAndPasswordTest" finished-at="2021-01-31T16:23:32 MSK" duration-ms="242" status="PASS">
+        <test-method signature="signInWithCorrectEmailAndPasswordTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="signInWithCorrectEmailAndPasswordTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="56" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInWithCorrectEmailAndPasswordTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:32 MSK" name="init" finished-at="2021-01-31T16:23:32 MSK" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="signInWithNullEmailTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:32 MSK" name="signInWithNullEmailTest" finished-at="2021-01-31T16:23:32 MSK" duration-ms="9" status="PASS">
+        <test-method signature="signInWithNullEmailTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="signInWithNullEmailTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInWithNullEmailTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:32 MSK" name="init" finished-at="2021-01-31T16:23:32 MSK" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="signInWithNullPasswordTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:32 MSK" name="signInWithNullPasswordTest" finished-at="2021-01-31T16:23:32 MSK" duration-ms="3" status="PASS">
+        <test-method signature="signInWithNullPasswordTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="signInWithNullPasswordTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInWithNullPasswordTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:32 MSK" name="init" finished-at="2021-01-31T16:23:32 MSK" duration-ms="21" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="signInWithWrongEmailTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:32 MSK" name="signInWithWrongEmailTest" finished-at="2021-01-31T16:23:32 MSK" duration-ms="6" status="PASS">
+        <test-method signature="signInWithWrongEmailTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="signInWithWrongEmailTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInWithWrongEmailTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:32 MSK" name="init" finished-at="2021-01-31T16:23:32 MSK" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="signInWithWrongPasswordTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@3b7d3a38]" started-at="2021-01-31T16:23:32 MSK" name="signInWithWrongPasswordTest" finished-at="2021-01-31T16:23:32 MSK" duration-ms="114" status="PASS">
+        <test-method signature="signInWithWrongPasswordTest()[pri:0, instance:com.suprun.periodicals.service.UserServiceTest@7a1a14a4]" started-at="2021-02-03T10:22:31 MSK" name="signInWithWrongPasswordTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="52" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInWithWrongPasswordTest -->
       </class> <!-- com.suprun.periodicals.service.UserServiceTest -->
       <class name="com.suprun.periodicals.service.SubscriptionServiceTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="63" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findAllSubscriptionPlans()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="findAllSubscriptionPlans" finished-at="2021-01-31T16:23:31 MSK" duration-ms="19" status="PASS">
+        <test-method signature="findAllSubscriptionPlans()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="findAllSubscriptionPlans" finished-at="2021-02-03T10:22:31 MSK" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findAllSubscriptionPlans -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findAllSubscriptionsByPaymentWithExistingSubscriptionsTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="findAllSubscriptionsByPaymentWithExistingSubscriptionsTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="12" status="PASS">
+        <test-method signature="findAllSubscriptionsByPaymentWithExistingSubscriptionsTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="findAllSubscriptionsByPaymentWithExistingSubscriptionsTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findAllSubscriptionsByPaymentWithExistingSubscriptionsTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="31" status="PASS">
+        <test-method signature="findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findAllSubscriptionsByUserAndStatusTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="findAllSubscriptionsByUserAndStatusTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="6" status="PASS">
+        <test-method signature="findAllSubscriptionsByUserAndStatusTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="findAllSubscriptionsByUserAndStatusTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findAllSubscriptionsByUserAndStatusTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="37" status="PASS">
+        <test-method signature="findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="4" status="PASS">
+        <test-method signature="findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="getSubscriptionsCountByUserAndStatusTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="getSubscriptionsCountByUserAndStatusTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="3" status="PASS">
+        <test-method signature="getSubscriptionsCountByUserAndStatusTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="getSubscriptionsCountByUserAndStatusTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSubscriptionsCountByUserAndStatusTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="isAlreadySubscribed()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="isAlreadySubscribed" finished-at="2021-01-31T16:23:31 MSK" duration-ms="3" status="PASS">
+        <test-method signature="isAlreadySubscribed()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="isAlreadySubscribed" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isAlreadySubscribed -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="processSubscriptionsTestWithNotValidData()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@1046d517]" started-at="2021-01-31T16:23:31 MSK" name="processSubscriptionsTestWithNotValidData" finished-at="2021-01-31T16:23:31 MSK" duration-ms="4" status="PASS">
+        <test-method signature="processSubscriptionsTestWithNotValidData()[pri:0, instance:com.suprun.periodicals.service.SubscriptionServiceTest@7b420819]" started-at="2021-02-03T10:22:31 MSK" name="processSubscriptionsTestWithNotValidData" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- processSubscriptionsTestWithNotValidData -->
       </class> <!-- com.suprun.periodicals.service.SubscriptionServiceTest -->
       <class name="com.suprun.periodicals.service.SubscriptionBinServiceTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@ca30bc1]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="64" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@35432107]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="addItemToCartTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@ca30bc1]" started-at="2021-01-31T16:23:31 MSK" name="addItemToCartTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="30" status="PASS">
+        <test-method signature="addItemToCartTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@35432107]" started-at="2021-02-03T10:22:31 MSK" name="addItemToCartTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemToCartTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@ca30bc1]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@35432107]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="removeAllItemFromCartTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@ca30bc1]" started-at="2021-01-31T16:23:31 MSK" name="removeAllItemFromCartTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="10" status="PASS">
+        <test-method signature="removeAllItemFromCartTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@35432107]" started-at="2021-02-03T10:22:31 MSK" name="removeAllItemFromCartTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeAllItemFromCartTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@ca30bc1]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@35432107]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="removeItemFromCartTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@ca30bc1]" started-at="2021-01-31T16:23:31 MSK" name="removeItemFromCartTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="10" status="PASS">
+        <test-method signature="removeItemFromCartTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@35432107]" started-at="2021-02-03T10:22:31 MSK" name="removeItemFromCartTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeItemFromCartTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@ca30bc1]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@35432107]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="updateShoppingCartItemsFromDatabaseTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@ca30bc1]" started-at="2021-01-31T16:23:31 MSK" name="updateShoppingCartItemsFromDatabaseTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="8" status="PASS">
+        <test-method signature="updateShoppingCartItemsFromDatabaseTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@35432107]" started-at="2021-02-03T10:22:31 MSK" name="updateShoppingCartItemsFromDatabaseTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateShoppingCartItemsFromDatabaseTest -->
-        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@ca30bc1]" started-at="2021-01-31T16:23:31 MSK" name="init" finished-at="2021-01-31T16:23:31 MSK" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@35432107]" started-at="2021-02-03T10:22:31 MSK" name="init" finished-at="2021-02-03T10:22:31 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="updateShoppingCartItemsFromDatabaseWithExceptionTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@ca30bc1]" started-at="2021-01-31T16:23:31 MSK" name="updateShoppingCartItemsFromDatabaseWithExceptionTest" finished-at="2021-01-31T16:23:31 MSK" duration-ms="16" status="PASS">
+        <test-method signature="updateShoppingCartItemsFromDatabaseWithExceptionTest()[pri:0, instance:com.suprun.periodicals.service.SubscriptionBinServiceTest@35432107]" started-at="2021-02-03T10:22:31 MSK" name="updateShoppingCartItemsFromDatabaseWithExceptionTest" finished-at="2021-02-03T10:22:31 MSK" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateShoppingCartItemsFromDatabaseWithExceptionTest -->
       </class> <!-- com.suprun.periodicals.service.SubscriptionBinServiceTest -->
       <class name="com.suprun.periodicals.service.entity.SubscriptionBinTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="setUp" finished-at="2021-01-31T16:23:22 MSK" duration-ms="46" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="setUp" finished-at="2021-02-03T10:22:29 MSK" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addItemTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="addItemTest" finished-at="2021-01-31T16:23:22 MSK" duration-ms="16" status="PASS">
+        <test-method signature="addItemTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="addItemTest" finished-at="2021-02-03T10:22:29 MSK" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="setUp" finished-at="2021-01-31T16:23:22 MSK" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="setUp" finished-at="2021-02-03T10:22:29 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="getItemsTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="getItemsTest" finished-at="2021-01-31T16:23:22 MSK" duration-ms="22" status="PASS">
+        <test-method signature="getItemsTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="getItemsTest" finished-at="2021-02-03T10:22:29 MSK" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getItemsTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="setUp" finished-at="2021-01-31T16:23:22 MSK" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="getTotalPriceTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="getTotalPriceTest" finished-at="2021-01-31T16:23:22 MSK" duration-ms="15" status="PASS">
+        <test-method signature="getTotalPriceTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="getTotalPriceTest" finished-at="2021-02-03T10:22:29 MSK" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTotalPriceTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="setUp" finished-at="2021-01-31T16:23:22 MSK" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="setUp" finished-at="2021-02-03T10:22:29 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="setUp" finished-at="2021-01-31T16:23:22 MSK" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="removeItemInvalidIdTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="removeItemInvalidIdTest" finished-at="2021-01-31T16:23:22 MSK" duration-ms="16" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeItemInvalidIdTest -->
-        <test-method signature="isHasSuspendedPeriodicalTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="isHasSuspendedPeriodicalTest" finished-at="2021-01-31T16:23:22 MSK" duration-ms="0" status="PASS">
+        <test-method signature="isHasSuspendedPeriodicalTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="isHasSuspendedPeriodicalTest" finished-at="2021-02-03T10:22:29 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isHasSuspendedPeriodicalTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="setUp" finished-at="2021-01-31T16:23:22 MSK" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="setUp" finished-at="2021-02-03T10:22:29 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="updateItemWithAnotherItemTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="updateItemWithAnotherItemTest" finished-at="2021-01-31T16:23:22 MSK" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="setUp" finished-at="2021-02-03T10:22:29 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateItemWithAnotherItemTest -->
-        <test-method signature="removeItemTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="removeItemTest" finished-at="2021-01-31T16:23:22 MSK" duration-ms="0" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="removeItemInvalidIdTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="removeItemInvalidIdTest" finished-at="2021-02-03T10:22:29 MSK" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeItemInvalidIdTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="setUp" finished-at="2021-02-03T10:22:29 MSK" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="removeItemTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="removeItemTest" finished-at="2021-02-03T10:22:29 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeItemTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="setUp" finished-at="2021-01-31T16:23:22 MSK" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="setUp" finished-at="2021-02-03T10:22:29 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="updateItemWithSameItemTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="updateItemWithSameItemTest" finished-at="2021-01-31T16:23:22 MSK" duration-ms="0" status="PASS">
+        <test-method signature="updateItemWithAnotherItemTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="updateItemWithAnotherItemTest" finished-at="2021-02-03T10:22:29 MSK" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateItemWithAnotherItemTest -->
+        <test-method signature="updateItemWithSameItemTest()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="updateItemWithSameItemTest" finished-at="2021-02-03T10:22:29 MSK" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateItemWithSameItemTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@6cce16f4]" started-at="2021-01-31T16:23:22 MSK" name="setUp" finished-at="2021-01-31T16:23:22 MSK" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.suprun.periodicals.service.entity.SubscriptionBinTest@c9d0d6]" started-at="2021-02-03T10:22:29 MSK" name="setUp" finished-at="2021-02-03T10:22:29 MSK" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->

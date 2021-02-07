@@ -1,13 +1,11 @@
 package com.suprun.periodicals.dao.connection;
 
-import com.suprun.periodicals.dao.DaoException;
 import com.suprun.periodicals.dao.transaction.Transaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.Objects;
 
 /**
  * The class is a {@link java.sql.Connection } wrapper.

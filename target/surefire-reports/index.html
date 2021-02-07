@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">51 methods,   51 passed</span>
+                    <span class="method-stats">51 methods, 2 failed,   49 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="createPeriodicalTest">createPeriodicalTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="updatePeriodicalTest">updatePeriodicalTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -125,11 +144,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PaymentServiceTest" class="method navigator-link" hash-for-method="createPayment">createPayment</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="createPeriodicalTest">createPeriodicalTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -344,11 +358,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.PeriodicalServiceTest" class="method navigator-link" hash-for-method="updatePeriodicalTest">updatePeriodicalTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.suprun.periodicals.service.SubscriptionBinServiceTest" class="method navigator-link" hash-for-method="updateShoppingCartItemsFromDatabaseTest">updateShoppingCartItemsFromDatabaseTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -369,6 +378,60 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.suprun.periodicals.service.PeriodicalServiceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPeriodicalTest">
+                  </a> <!-- createPeriodicalTest -->
+                  <span class="method-name">createPeriodicalTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.suprun.periodicals.dao.connection.ConnectionPool.getConnection(ConnectionPool.java:95)
+	at com.suprun.periodicals.dao.connection.ConnectionProxy.getConnection(ConnectionProxy.java:47)
+	at com.suprun.periodicals.dao.transaction.TransactionSupport.initConnection(TransactionSupport.java:130)
+	at com.suprun.periodicals.dao.transaction.TransactionSupport.prepareConnectionForTransaction(TransactionSupport.java:48)
+	at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:62)
+	at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:46)
+	at com.suprun.periodicals.service.PeriodicalService.createPeriodical(PeriodicalService.java:55)
+	at com.suprun.periodicals.service.PeriodicalServiceTest.createPeriodicalTest(PeriodicalServiceTest.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: java.lang.NullPointerException
+		at com.suprun.periodicals.dao.transaction.TransactionSupport.close(TransactionSupport.java:116)
+		at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:58)
+		... 41 more
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePeriodicalTest">
+                  </a> <!-- updatePeriodicalTest -->
+                  <span class="method-name">updatePeriodicalTest</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.suprun.periodicals.dao.connection.ConnectionPool.getConnection(ConnectionPool.java:95)
+	at com.suprun.periodicals.dao.connection.ConnectionProxy.getConnection(ConnectionProxy.java:47)
+	at com.suprun.periodicals.dao.transaction.TransactionSupport.initConnection(TransactionSupport.java:130)
+	at com.suprun.periodicals.dao.transaction.TransactionSupport.prepareConnectionForTransaction(TransactionSupport.java:48)
+	at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:62)
+	at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:46)
+	at com.suprun.periodicals.service.PeriodicalService.updatePeriodical(PeriodicalService.java:78)
+	at com.suprun.periodicals.service.PeriodicalServiceTest.updatePeriodicalTest(PeriodicalServiceTest.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	Suppressed: java.lang.NullPointerException
+		at com.suprun.periodicals.dao.transaction.TransactionSupport.close(TransactionSupport.java:116)
+		at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:58)
+		... 41 more
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -387,13 +450,6 @@
                   <a name="changeStatusOnSameStatusTest">
                   </a> <!-- changeStatusOnSameStatusTest -->
                   <span class="method-name">changeStatusOnSameStatusTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createPeriodicalTest">
-                  </a> <!-- createPeriodicalTest -->
-                  <span class="method-name">createPeriodicalTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -457,13 +513,6 @@
                   <a name="getPeriodicalsCountTest">
                   </a> <!-- getPeriodicalsCountTest -->
                   <span class="method-name">getPeriodicalsCountTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="updatePeriodicalTest">
-                  </a> <!-- updatePeriodicalTest -->
-                  <span class="method-name">updatePeriodicalTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -835,212 +884,212 @@ data.addRows(51);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createPeriodicalTest')
 data.setCell(0, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
-data.setCell(0, 3, 7100);
+data.setCell(0, 3, 1324);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'registerUserWithValidParametersTest')
 data.setCell(1, 2, 'com.suprun.periodicals.service.UserServiceTest')
-data.setCell(1, 3, 540);
+data.setCell(1, 3, 131);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'signInWithCorrectEmailAndPasswordTest')
 data.setCell(2, 2, 'com.suprun.periodicals.service.UserServiceTest')
-data.setCell(2, 3, 242);
+data.setCell(2, 3, 56);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createPayment')
-data.setCell(3, 2, 'com.suprun.periodicals.service.PaymentServiceTest')
-data.setCell(3, 3, 216);
+data.setCell(3, 1, 'signInWithWrongPasswordTest')
+data.setCell(3, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(3, 3, 52);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'signInWithWrongPasswordTest')
-data.setCell(4, 2, 'com.suprun.periodicals.service.UserServiceTest')
-data.setCell(4, 3, 114);
+data.setCell(4, 1, 'createPayment')
+data.setCell(4, 2, 'com.suprun.periodicals.service.PaymentServiceTest')
+data.setCell(4, 3, 45);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest')
-data.setCell(5, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
-data.setCell(5, 3, 37);
+data.setCell(5, 1, 'findAllPeriodicalTypesTest')
+data.setCell(5, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(5, 3, 17);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest')
-data.setCell(6, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
-data.setCell(6, 3, 31);
+data.setCell(6, 1, 'findAllFrequenciesTest')
+data.setCell(6, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(6, 3, 12);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'addItemToCartTest')
-data.setCell(7, 2, 'com.suprun.periodicals.service.SubscriptionBinServiceTest')
-data.setCell(7, 3, 30);
+data.setCell(7, 1, 'findAllPeriodicalsTest')
+data.setCell(7, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(7, 3, 10);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'findAllFrequenciesTest')
-data.setCell(8, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
-data.setCell(8, 3, 23);
+data.setCell(8, 1, 'getItemsTest')
+data.setCell(8, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(8, 3, 7);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'getItemsTest')
-data.setCell(9, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
-data.setCell(9, 3, 22);
+data.setCell(9, 1, 'addItemToCartTest')
+data.setCell(9, 2, 'com.suprun.periodicals.service.SubscriptionBinServiceTest')
+data.setCell(9, 3, 6);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'findAllSubscriptionPlans')
-data.setCell(10, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
-data.setCell(10, 3, 19);
+data.setCell(10, 1, 'updateShoppingCartItemsFromDatabaseTest')
+data.setCell(10, 2, 'com.suprun.periodicals.service.SubscriptionBinServiceTest')
+data.setCell(10, 3, 6);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'addItemTest')
 data.setCell(11, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
-data.setCell(11, 3, 16);
+data.setCell(11, 3, 5);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'removeItemInvalidIdTest')
-data.setCell(12, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
-data.setCell(12, 3, 16);
+data.setCell(12, 1, 'updateShoppingCartItemsFromDatabaseWithExceptionTest')
+data.setCell(12, 2, 'com.suprun.periodicals.service.SubscriptionBinServiceTest')
+data.setCell(12, 3, 4);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'findPaymentByIdWithExistingPaymentTest')
-data.setCell(13, 2, 'com.suprun.periodicals.service.PaymentServiceTest')
-data.setCell(13, 3, 16);
+data.setCell(13, 1, 'getTotalPriceTest')
+data.setCell(13, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(13, 3, 4);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'updateShoppingCartItemsFromDatabaseWithExceptionTest')
-data.setCell(14, 2, 'com.suprun.periodicals.service.SubscriptionBinServiceTest')
-data.setCell(14, 3, 16);
+data.setCell(14, 1, 'findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest')
+data.setCell(14, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
+data.setCell(14, 3, 3);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'getTotalPriceTest')
-data.setCell(15, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
-data.setCell(15, 3, 15);
+data.setCell(15, 1, 'changeStatusOnAnotherStatusTest')
+data.setCell(15, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(15, 3, 3);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'findAllSubscriptionsByPaymentWithExistingSubscriptionsTest')
+data.setCell(16, 1, 'findAllSubscriptionPlans')
 data.setCell(16, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
-data.setCell(16, 3, 12);
+data.setCell(16, 3, 2);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'findAllPeriodicalTypesTest')
+data.setCell(17, 1, 'findAllPeriodicalsByStatusTest')
 data.setCell(17, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
-data.setCell(17, 3, 10);
+data.setCell(17, 3, 2);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'removeAllItemFromCartTest')
-data.setCell(18, 2, 'com.suprun.periodicals.service.SubscriptionBinServiceTest')
-data.setCell(18, 3, 10);
+data.setCell(18, 1, 'getPaymentsCountTest')
+data.setCell(18, 2, 'com.suprun.periodicals.service.PaymentServiceTest')
+data.setCell(18, 3, 2);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'removeItemFromCartTest')
-data.setCell(19, 2, 'com.suprun.periodicals.service.SubscriptionBinServiceTest')
-data.setCell(19, 3, 10);
+data.setCell(19, 1, 'findUserByIdWithExistingUserTest')
+data.setCell(19, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(19, 3, 2);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'signInWithNullEmailTest')
-data.setCell(20, 2, 'com.suprun.periodicals.service.UserServiceTest')
-data.setCell(20, 3, 9);
+data.setCell(20, 1, 'findAllSubscriptionsByUserAndStatusTest')
+data.setCell(20, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
+data.setCell(20, 3, 2);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'updateShoppingCartItemsFromDatabaseTest')
-data.setCell(21, 2, 'com.suprun.periodicals.service.SubscriptionBinServiceTest')
-data.setCell(21, 3, 8);
+data.setCell(21, 1, 'changeStatusOnSameStatusTest')
+data.setCell(21, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(21, 3, 2);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'findAllPeriodicalsTest')
-data.setCell(22, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
-data.setCell(22, 3, 7);
+data.setCell(22, 1, 'updateItemWithAnotherItemTest')
+data.setCell(22, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(22, 3, 2);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'findAllSubscriptionsByUserAndStatusTest')
+data.setCell(23, 1, 'findAllSubscriptionsByPaymentWithExistingSubscriptionsTest')
 data.setCell(23, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
-data.setCell(23, 3, 6);
+data.setCell(23, 3, 2);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'findPaymentByIdWithNotExistingPaymentTest')
-data.setCell(24, 2, 'com.suprun.periodicals.service.PaymentServiceTest')
-data.setCell(24, 3, 6);
+data.setCell(24, 1, 'removeAllItemFromCartTest')
+data.setCell(24, 2, 'com.suprun.periodicals.service.SubscriptionBinServiceTest')
+data.setCell(24, 3, 1);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'findAllPublishersTest')
-data.setCell(25, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
-data.setCell(25, 3, 6);
+data.setCell(25, 1, 'registerUserWithNullPasswordTest')
+data.setCell(25, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(25, 3, 1);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'findAllPeriodicalsByStatusTest')
-data.setCell(26, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
-data.setCell(26, 3, 6);
+data.setCell(26, 1, 'updateItemWithSameItemTest')
+data.setCell(26, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(26, 3, 1);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'signInWithWrongEmailTest')
-data.setCell(27, 2, 'com.suprun.periodicals.service.UserServiceTest')
-data.setCell(27, 3, 6);
+data.setCell(27, 1, 'findPeriodicalByIdWithNotExistingPeriodicalTest')
+data.setCell(27, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(27, 3, 1);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'getPeriodicalsCountByStatusTest')
-data.setCell(28, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
-data.setCell(28, 3, 5);
+data.setCell(28, 1, 'isHasSuspendedPeriodicalTest')
+data.setCell(28, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(28, 3, 1);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'findUserByIdWithExistingUserTest')
+data.setCell(29, 1, 'signInWithNullPasswordTest')
 data.setCell(29, 2, 'com.suprun.periodicals.service.UserServiceTest')
-data.setCell(29, 3, 5);
+data.setCell(29, 3, 1);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'findUserByIdWithNotExistingUserTest')
-data.setCell(30, 2, 'com.suprun.periodicals.service.UserServiceTest')
-data.setCell(30, 3, 5);
+data.setCell(30, 1, 'findAllPublishersTest')
+data.setCell(30, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(30, 3, 1);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'changeStatusOnAnotherStatusTest')
-data.setCell(31, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
-data.setCell(31, 3, 5);
+data.setCell(31, 1, 'removeItemFromCartTest')
+data.setCell(31, 2, 'com.suprun.periodicals.service.SubscriptionBinServiceTest')
+data.setCell(31, 3, 1);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'getPaymentsCountTest')
-data.setCell(32, 2, 'com.suprun.periodicals.service.PaymentServiceTest')
-data.setCell(32, 3, 5);
+data.setCell(32, 1, 'processSubscriptionsTestWithNotValidData')
+data.setCell(32, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
+data.setCell(32, 3, 1);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest')
-data.setCell(33, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
-data.setCell(33, 3, 4);
+data.setCell(33, 1, 'findPaymentByIdWithNotExistingPaymentTest')
+data.setCell(33, 2, 'com.suprun.periodicals.service.PaymentServiceTest')
+data.setCell(33, 3, 1);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'registerUserWithNullEmailTest')
-data.setCell(34, 2, 'com.suprun.periodicals.service.UserServiceTest')
-data.setCell(34, 3, 4);
+data.setCell(34, 1, 'getPeriodicalsCountByStatusTest')
+data.setCell(34, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
+data.setCell(34, 3, 1);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'processSubscriptionsTestWithNotValidData')
-data.setCell(35, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
-data.setCell(35, 3, 4);
+data.setCell(35, 1, 'findAllPaymentsTest')
+data.setCell(35, 2, 'com.suprun.periodicals.service.PaymentServiceTest')
+data.setCell(35, 3, 1);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'findPeriodicalByIdWithExistingPeriodicalTest')
-data.setCell(36, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
-data.setCell(36, 3, 4);
+data.setCell(36, 1, 'findPaymentByIdWithExistingPaymentTest')
+data.setCell(36, 2, 'com.suprun.periodicals.service.PaymentServiceTest')
+data.setCell(36, 3, 1);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'findPeriodicalByIdWithNotExistingPeriodicalTest')
-data.setCell(37, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
-data.setCell(37, 3, 4);
+data.setCell(37, 1, 'isAlreadySubscribed')
+data.setCell(37, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
+data.setCell(37, 3, 1);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'updatePeriodicalTest')
-data.setCell(38, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
-data.setCell(38, 3, 3);
+data.setCell(38, 1, 'signInWithWrongEmailTest')
+data.setCell(38, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(38, 3, 1);
 data.setCell(39, 0, 39)
-data.setCell(39, 1, 'getPeriodicalsCountTest')
-data.setCell(39, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
-data.setCell(39, 3, 3);
+data.setCell(39, 1, 'removeItemInvalidIdTest')
+data.setCell(39, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(39, 3, 1);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'signInWithNullPasswordTest')
+data.setCell(40, 1, 'registerUserWithNullEmailTest')
 data.setCell(40, 2, 'com.suprun.periodicals.service.UserServiceTest')
-data.setCell(40, 3, 3);
+data.setCell(40, 3, 1);
 data.setCell(41, 0, 41)
 data.setCell(41, 1, 'getSubscriptionsCountByUserAndStatusTest')
 data.setCell(41, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
-data.setCell(41, 3, 3);
+data.setCell(41, 3, 1);
 data.setCell(42, 0, 42)
-data.setCell(42, 1, 'isAlreadySubscribed')
-data.setCell(42, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
-data.setCell(42, 3, 3);
+data.setCell(42, 1, 'registerUserWithSameEmailTest')
+data.setCell(42, 2, 'com.suprun.periodicals.service.UserServiceTest')
+data.setCell(42, 3, 1);
 data.setCell(43, 0, 43)
-data.setCell(43, 1, 'registerUserWithSameEmailTest')
-data.setCell(43, 2, 'com.suprun.periodicals.service.UserServiceTest')
-data.setCell(43, 3, 2);
+data.setCell(43, 1, 'removeItemTest')
+data.setCell(43, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(43, 3, 1);
 data.setCell(44, 0, 44)
-data.setCell(44, 1, 'registerUserWithNullPasswordTest')
-data.setCell(44, 2, 'com.suprun.periodicals.service.UserServiceTest')
-data.setCell(44, 3, 2);
+data.setCell(44, 1, 'findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest')
+data.setCell(44, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
+data.setCell(44, 3, 1);
 data.setCell(45, 0, 45)
-data.setCell(45, 1, 'changeStatusOnSameStatusTest')
+data.setCell(45, 1, 'updatePeriodicalTest')
 data.setCell(45, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
-data.setCell(45, 3, 2);
+data.setCell(45, 3, 1);
 data.setCell(46, 0, 46)
-data.setCell(46, 1, 'removeItemTest')
-data.setCell(46, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(46, 1, 'signInWithNullEmailTest')
+data.setCell(46, 2, 'com.suprun.periodicals.service.UserServiceTest')
 data.setCell(46, 3, 0);
 data.setCell(47, 0, 47)
-data.setCell(47, 1, 'findAllPaymentsTest')
-data.setCell(47, 2, 'com.suprun.periodicals.service.PaymentServiceTest')
+data.setCell(47, 1, 'findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest')
+data.setCell(47, 2, 'com.suprun.periodicals.service.SubscriptionServiceTest')
 data.setCell(47, 3, 0);
 data.setCell(48, 0, 48)
-data.setCell(48, 1, 'updateItemWithAnotherItemTest')
-data.setCell(48, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(48, 1, 'findPeriodicalByIdWithExistingPeriodicalTest')
+data.setCell(48, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
 data.setCell(48, 3, 0);
 data.setCell(49, 0, 49)
-data.setCell(49, 1, 'isHasSuspendedPeriodicalTest')
-data.setCell(49, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(49, 1, 'getPeriodicalsCountTest')
+data.setCell(49, 2, 'com.suprun.periodicals.service.PeriodicalServiceTest')
 data.setCell(49, 3, 0);
 data.setCell(50, 0, 50)
-data.setCell(50, 1, 'updateItemWithSameItemTest')
-data.setCell(50, 2, 'com.suprun.periodicals.service.entity.SubscriptionBinTest')
+data.setCell(50, 1, 'findUserByIdWithNotExistingUserTest')
+data.setCell(50, 2, 'com.suprun.periodicals.service.UserServiceTest')
 data.setCell(50, 3, 0);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -1073,422 +1122,426 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addItemTest</span>
-                <span class="method-start">46 ms</span>
+                <span class="method-start">5 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">78 ms</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getItemsTest</span>
-                <span class="method-start">78 ms</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">100 ms</span>
+                <span class="method-start">21 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getTotalPriceTest</span>
-                <span class="method-start">100 ms</span>
+                <span class="method-start">21 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">115 ms</span>
+                <span class="method-start">26 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">isHasSuspendedPeriodicalTest</span>
-                <span class="method-start">115 ms</span>
+                <span class="method-start">26 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">115 ms</span>
+                <span class="method-start">27 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">removeItemInvalidIdTest</span>
-                <span class="method-start">115 ms</span>
+                <span class="method-start">27 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">131 ms</span>
+                <span class="method-start">28 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">removeItemTest</span>
-                <span class="method-start">131 ms</span>
+                <span class="method-start">28 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">131 ms</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">updateItemWithAnotherItemTest</span>
-                <span class="method-start">131 ms</span>
+                <span class="method-start">29 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">131 ms</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">updateItemWithSameItemTest</span>
-                <span class="method-start">131 ms</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.suprun.periodicals.service.PaymentServiceTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">147 ms</span>
+                <span class="method-start">36 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createPayment</span>
-                <span class="method-start">1183 ms</span>
+                <span class="method-start">240 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">1399 ms</span>
+                <span class="method-start">285 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findAllPaymentsTest</span>
-                <span class="method-start">1415 ms</span>
+                <span class="method-start">286 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">1431 ms</span>
+                <span class="method-start">288 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findPaymentByIdWithExistingPaymentTest</span>
-                <span class="method-start">1431 ms</span>
+                <span class="method-start">289 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">1449 ms</span>
+                <span class="method-start">291 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findPaymentByIdWithNotExistingPaymentTest</span>
-                <span class="method-start">1452 ms</span>
+                <span class="method-start">292 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">1461 ms</span>
+                <span class="method-start">294 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getPaymentsCountTest</span>
-                <span class="method-start">1465 ms</span>
+                <span class="method-start">294 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.suprun.periodicals.service.PeriodicalServiceTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">1481 ms</span>
+                <span class="method-start">297 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">changeStatusOnAnotherStatusTest</span>
-                <span class="method-start">1651 ms</span>
+                <span class="method-start">328 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">1657 ms</span>
+                <span class="method-start">333 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">changeStatusOnSameStatusTest</span>
-                <span class="method-start">1660 ms</span>
+                <span class="method-start">334 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">init</span>
+                <span class="method-start">336 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createPeriodicalTest</span>
+                <span class="method-start">337 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
                 <span class="method-start">1665 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">createPeriodicalTest</span>
-                <span class="method-start">1669 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">init</span>
-                <span class="method-start">8770 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <span class="method-name">findAllFrequenciesTest</span>
-                <span class="method-start">8778 ms</span>
+                <span class="method-start">1666 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">8802 ms</span>
+                <span class="method-start">1678 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findAllPeriodicalTypesTest</span>
-                <span class="method-start">8809 ms</span>
+                <span class="method-start">1679 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">8822 ms</span>
+                <span class="method-start">1697 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findAllPeriodicalsByStatusTest</span>
-                <span class="method-start">8825 ms</span>
+                <span class="method-start">1698 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">8833 ms</span>
+                <span class="method-start">1700 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findAllPeriodicalsTest</span>
-                <span class="method-start">8840 ms</span>
+                <span class="method-start">1701 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">8848 ms</span>
+                <span class="method-start">1711 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findAllPublishersTest</span>
-                <span class="method-start">8852 ms</span>
+                <span class="method-start">1712 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">8868 ms</span>
+                <span class="method-start">1714 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findPeriodicalByIdWithExistingPeriodicalTest</span>
-                <span class="method-start">8880 ms</span>
+                <span class="method-start">1715 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">8886 ms</span>
+                <span class="method-start">1716 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findPeriodicalByIdWithNotExistingPeriodicalTest</span>
-                <span class="method-start">8889 ms</span>
+                <span class="method-start">1716 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">8895 ms</span>
+                <span class="method-start">1717 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getPeriodicalsCountByStatusTest</span>
-                <span class="method-start">8898 ms</span>
+                <span class="method-start">1718 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">8904 ms</span>
+                <span class="method-start">1719 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getPeriodicalsCountTest</span>
-                <span class="method-start">8908 ms</span>
+                <span class="method-start">1720 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">8912 ms</span>
+                <span class="method-start">1721 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">updatePeriodicalTest</span>
-                <span class="method-start">8914 ms</span>
+                <span class="method-start">1722 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.suprun.periodicals.service.SubscriptionBinServiceTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">8919 ms</span>
+                <span class="method-start">1725 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addItemToCartTest</span>
-                <span class="method-start">8983 ms</span>
+                <span class="method-start">1732 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9014 ms</span>
+                <span class="method-start">1738 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">removeAllItemFromCartTest</span>
-                <span class="method-start">9015 ms</span>
+                <span class="method-start">1739 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9027 ms</span>
+                <span class="method-start">1741 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">removeItemFromCartTest</span>
-                <span class="method-start">9031 ms</span>
+                <span class="method-start">1743 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9046 ms</span>
+                <span class="method-start">1744 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">updateShoppingCartItemsFromDatabaseTest</span>
-                <span class="method-start">9050 ms</span>
+                <span class="method-start">1748 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9060 ms</span>
+                <span class="method-start">1755 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">updateShoppingCartItemsFromDatabaseWithExceptionTest</span>
-                <span class="method-start">9062 ms</span>
+                <span class="method-start">1755 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.suprun.periodicals.service.SubscriptionServiceTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9082 ms</span>
+                <span class="method-start">1760 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findAllSubscriptionPlans</span>
-                <span class="method-start">9146 ms</span>
+                <span class="method-start">1775 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9167 ms</span>
+                <span class="method-start">1777 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findAllSubscriptionsByPaymentWithExistingSubscriptionsTest</span>
-                <span class="method-start">9169 ms</span>
+                <span class="method-start">1778 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9183 ms</span>
+                <span class="method-start">1780 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest</span>
-                <span class="method-start">9187 ms</span>
+                <span class="method-start">1781 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9229 ms</span>
+                <span class="method-start">1785 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findAllSubscriptionsByUserAndStatusTest</span>
-                <span class="method-start">9233 ms</span>
+                <span class="method-start">1786 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9241 ms</span>
+                <span class="method-start">1789 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest</span>
-                <span class="method-start">9244 ms</span>
+                <span class="method-start">1791 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9284 ms</span>
+                <span class="method-start">1792 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest</span>
-                <span class="method-start">9288 ms</span>
+                <span class="method-start">1793 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9294 ms</span>
+                <span class="method-start">1794 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getSubscriptionsCountByUserAndStatusTest</span>
-                <span class="method-start">9299 ms</span>
+                <span class="method-start">1795 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9303 ms</span>
+                <span class="method-start">1796 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">isAlreadySubscribed</span>
-                <span class="method-start">9305 ms</span>
+                <span class="method-start">1797 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9310 ms</span>
+                <span class="method-start">1798 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">processSubscriptionsTestWithNotValidData</span>
-                <span class="method-start">9313 ms</span>
+                <span class="method-start">1799 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.suprun.periodicals.service.UserServiceTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9319 ms</span>
+                <span class="method-start">1801 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findUserByIdWithExistingUserTest</span>
-                <span class="method-start">9345 ms</span>
+                <span class="method-start">1807 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9352 ms</span>
+                <span class="method-start">1809 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">findUserByIdWithNotExistingUserTest</span>
-                <span class="method-start">9354 ms</span>
+                <span class="method-start">1810 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9366 ms</span>
+                <span class="method-start">1811 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">registerUserWithNullEmailTest</span>
-                <span class="method-start">9387 ms</span>
+                <span class="method-start">1812 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9393 ms</span>
+                <span class="method-start">1813 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">registerUserWithNullPasswordTest</span>
-                <span class="method-start">9395 ms</span>
+                <span class="method-start">1815 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9398 ms</span>
+                <span class="method-start">1816 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">registerUserWithSameEmailTest</span>
-                <span class="method-start">9400 ms</span>
+                <span class="method-start">1817 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9403 ms</span>
+                <span class="method-start">1818 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">registerUserWithValidParametersTest</span>
-                <span class="method-start">9405 ms</span>
+                <span class="method-start">1819 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">9946 ms</span>
+                <span class="method-start">1950 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signInWithCorrectEmailAndPasswordTest</span>
-                <span class="method-start">9948 ms</span>
+                <span class="method-start">1951 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">10193 ms</span>
+                <span class="method-start">2007 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signInWithNullEmailTest</span>
-                <span class="method-start">10200 ms</span>
+                <span class="method-start">2008 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">10211 ms</span>
+                <span class="method-start">2009 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signInWithNullPasswordTest</span>
-                <span class="method-start">10214 ms</span>
+                <span class="method-start">2009 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">10219 ms</span>
+                <span class="method-start">2010 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signInWithWrongEmailTest</span>
-                <span class="method-start">10241 ms</span>
+                <span class="method-start">2010 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">init</span>
-                <span class="method-start">10248 ms</span>
+                <span class="method-start">2012 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signInWithWrongPasswordTest</span>
-                <span class="method-start">10251 ms</span>
+                <span class="method-start">2012 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

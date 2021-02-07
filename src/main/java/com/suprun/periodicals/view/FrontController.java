@@ -1,5 +1,6 @@
 package com.suprun.periodicals.view;
 
+import com.suprun.periodicals.dao.connection.ConnectionPool;
 import com.suprun.periodicals.view.command.Command;
 import com.suprun.periodicals.view.command.CommandFactory;
 import com.suprun.periodicals.view.command.CommandResult;
@@ -15,6 +16,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.SQLException;
 
 /**
  * Provide a centralized request handling mechanism to
@@ -41,6 +43,14 @@ public class FrontController extends HttpServlet {
         commandFactory = CommandFactory.getInstance();
     }
 
+    /**
+     * Method for processing all GET requests
+     *
+     * @param request HttpServletRequest
+     * @param response HttpServletResponse
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response)
@@ -49,6 +59,14 @@ public class FrontController extends HttpServlet {
         processRequest(request, response, RequestMethod.GET);
     }
 
+    /**
+     * Method for processing all POST requests
+     *
+     * @param request HttpServletRequest
+     * @param response HttpServletResponse
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doPost(HttpServletRequest request,
                           HttpServletResponse response)
@@ -58,7 +76,7 @@ public class FrontController extends HttpServlet {
     }
 
     /**
-     * Main dispatching method for all types of methods
+     * Main dispatching method for all types of requests
      */
     private void processRequest(HttpServletRequest request, HttpServletResponse response, RequestMethod method)
             throws ServletException, IOException {
@@ -74,6 +92,16 @@ public class FrontController extends HttpServlet {
 
     private String getPath(HttpServletRequest request) {
         return request.getPathInfo();
+    }
+
+    @Override
+    public void destroy() {
+        super.destroy();
+        try {
+            ConnectionPool.getInstance().closeAllConnections();
+        } catch (SQLException e) {
+            LOGGER.debug("Error occurred while getting JDBC connection pool instance");
+        }
     }
 }
 

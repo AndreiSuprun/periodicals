@@ -1,114 +1,146 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="51" failures="0" name="TestSuite" time="8.7" errors="0" skipped="0">
+<testsuite tests="51" failures="2" name="TestSuite" time="1.737" errors="0" skipped="0">
   <properties>
-    <property name="idea.version" value="2020.3.1"/>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="java.vm.version" value="14.0.1+7"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14.0.1\bin"/>
-    <property name="user.country.format" value="BY"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\37529\Documents\19.01\periodicals"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="idea.version" value="2020.3.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="14.0.2+12"/>
+    <property name="sun.boot.library.path" value="C:\Users\lenovo\.jdks\adopt-openjdk-14.0.2\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\lenovo\IdeaProjects\periodicals"/>
+    <property name="java.vm.vendor" value="AdoptOpenJDK"/>
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="path.separator" value=";"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="user.script" value=""/>
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\37529\Documents\19.01\periodicals"/>
+    <property name="user.dir" value="C:\Users\lenovo\IdeaProjects\periodicals"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
-    <property name="java.runtime.version" value="14.0.1+7"/>
+    <property name="java.runtime.version" value="14.0.2+12"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\37529\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\lenovo\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.1\plugins\maven\lib\maven-event-listener.jar"/>
-    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.1\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1251"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-14.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Users\37529\AppData\Local\Microsoft\WindowsApps;;."/>
-    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.1\plugins\maven\lib\maven3/conf"/>
+    <property name="java.library.path" value="C:\Users\lenovo\.jdks\adopt-openjdk-14.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Avest\AvPCM_MNS;C:\Program Files (x86)\Avest\AvPCM_BPS-Sberbank;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Alfabank\Alfa Internet Bank Agent\Avest;C:\Program Files (x86)\Avest\AvPCM_nces;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Avest\AvPCM_BGPB;C:\Users\lenovo\.jdks\openjdk-15.0.1\bin;C:\Program Files\Java\jdk1.7.0_80\bin;C:\Program Files\Git\cmd;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\plugins\maven\lib\maven3/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="58.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\37529"/>
+    <property name="user.home" value="C:\Users\lenovo"/>
     <property name="user.timezone" value="Europe/Minsk"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="14"/>
-    <property name="user.name" value="37529"/>
-    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.1\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="user.name" value="lenovo"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
     <property name="java.vm.specification.version" value="14"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.3.1 install"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-14.0.1"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.3.2 install"/>
+    <property name="java.home" value="C:\Users\lenovo\.jdks\adopt-openjdk-14.0.2"/>
     <property name="user.language" value="ru"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.version" value="14.0.1"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.1\plugins\maven\lib\maven3"/>
+    <property name="java.version" value="14.0.2"/>
+    <property name="java.vendor" value="AdoptOpenJDK"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\plugins\maven\lib\maven3"/>
     <property name="file.separator" value="\"/>
-    <property name="java.version.date" value="2020-04-14"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="AdoptOpenJDK"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.suprun.periodicals.service.entity.SubscriptionBinTest" name="addItemTest" time="0.032"/>
-  <testcase classname="com.suprun.periodicals.service.entity.SubscriptionBinTest" name="getItemsTest" time="0.022"/>
-  <testcase classname="com.suprun.periodicals.service.entity.SubscriptionBinTest" name="getTotalPriceTest" time="0.015"/>
-  <testcase classname="com.suprun.periodicals.service.entity.SubscriptionBinTest" name="isHasSuspendedPeriodicalTest" time="0"/>
-  <testcase classname="com.suprun.periodicals.service.entity.SubscriptionBinTest" name="removeItemInvalidIdTest" time="0.016"/>
+  <testcase classname="com.suprun.periodicals.service.entity.SubscriptionBinTest" name="addItemTest" time="0.008"/>
+  <testcase classname="com.suprun.periodicals.service.entity.SubscriptionBinTest" name="getItemsTest" time="0.005"/>
+  <testcase classname="com.suprun.periodicals.service.entity.SubscriptionBinTest" name="getTotalPriceTest" time="0.005"/>
+  <testcase classname="com.suprun.periodicals.service.entity.SubscriptionBinTest" name="isHasSuspendedPeriodicalTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.entity.SubscriptionBinTest" name="removeItemInvalidIdTest" time="0.001"/>
   <testcase classname="com.suprun.periodicals.service.entity.SubscriptionBinTest" name="removeItemTest" time="0"/>
-  <testcase classname="com.suprun.periodicals.service.entity.SubscriptionBinTest" name="updateItemWithAnotherItemTest" time="0.016"/>
-  <testcase classname="com.suprun.periodicals.service.entity.SubscriptionBinTest" name="updateItemWithSameItemTest" time="0"/>
-  <testcase classname="com.suprun.periodicals.service.PaymentServiceTest" name="createPayment" time="0.248"/>
-  <testcase classname="com.suprun.periodicals.service.PaymentServiceTest" name="findAllPaymentsTest" time="0"/>
-  <testcase classname="com.suprun.periodicals.service.PaymentServiceTest" name="findPaymentByIdWithExistingPaymentTest" time="0.016"/>
-  <testcase classname="com.suprun.periodicals.service.PaymentServiceTest" name="findPaymentByIdWithNotExistingPaymentTest" time="0.007"/>
-  <testcase classname="com.suprun.periodicals.service.PaymentServiceTest" name="getPaymentsCountTest" time="0.011"/>
-  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="changeStatusOnAnotherStatusTest" time="0.001"/>
-  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="changeStatusOnSameStatusTest" time="0.003"/>
-  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="createPeriodicalTest" time="7.104"/>
-  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="findAllFrequenciesTest" time="0.007"/>
-  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="findAllPeriodicalTypesTest" time="0.012"/>
-  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="findAllPeriodicalsByStatusTest" time="0.007"/>
-  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="findAllPeriodicalsTest" time="0.007"/>
-  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="findAllPublishersTest" time="0.013"/>
-  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="findPeriodicalByIdWithExistingPeriodicalTest" time="0.005"/>
-  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="findPeriodicalByIdWithNotExistingPeriodicalTest" time="0.004"/>
-  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="getPeriodicalsCountByStatusTest" time="0.004"/>
-  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="getPeriodicalsCountTest" time="0.002"/>
-  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="updatePeriodicalTest" time="0.002"/>
-  <testcase classname="com.suprun.periodicals.service.SubscriptionBinServiceTest" name="addItemToCartTest" time="0.029"/>
-  <testcase classname="com.suprun.periodicals.service.SubscriptionBinServiceTest" name="removeAllItemFromCartTest" time="0.01"/>
-  <testcase classname="com.suprun.periodicals.service.SubscriptionBinServiceTest" name="removeItemFromCartTest" time="0.011"/>
-  <testcase classname="com.suprun.periodicals.service.SubscriptionBinServiceTest" name="updateShoppingCartItemsFromDatabaseTest" time="0.006"/>
-  <testcase classname="com.suprun.periodicals.service.SubscriptionBinServiceTest" name="updateShoppingCartItemsFromDatabaseWithExceptionTest" time="0.031"/>
-  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="findAllSubscriptionPlans" time="0.014"/>
-  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="findAllSubscriptionsByPaymentWithExistingSubscriptionsTest" time="0.012"/>
-  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest" time="0.038"/>
-  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="findAllSubscriptionsByUserAndStatusTest" time="0.007"/>
-  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest" time="0.039"/>
-  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest" time="0.004"/>
-  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="getSubscriptionsCountByUserAndStatusTest" time="0.003"/>
-  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="isAlreadySubscribed" time="0.004"/>
-  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="processSubscriptionsTestWithNotValidData" time="0.004"/>
-  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="findUserByIdWithExistingUserTest" time="0.004"/>
-  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="findUserByIdWithNotExistingUserTest" time="0.005"/>
-  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="registerUserWithNullEmailTest" time="0.004"/>
-  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="registerUserWithNullPasswordTest" time="0.002"/>
-  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="registerUserWithSameEmailTest" time="0.003"/>
-  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="registerUserWithValidParametersTest" time="0.54"/>
-  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="signInWithCorrectEmailAndPasswordTest" time="0.242"/>
-  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="signInWithNullEmailTest" time="0.01"/>
-  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="signInWithNullPasswordTest" time="0.004"/>
-  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="signInWithWrongEmailTest" time="0.006"/>
-  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="signInWithWrongPasswordTest" time="0.114"/>
+  <testcase classname="com.suprun.periodicals.service.entity.SubscriptionBinTest" name="updateItemWithAnotherItemTest" time="0.002"/>
+  <testcase classname="com.suprun.periodicals.service.entity.SubscriptionBinTest" name="updateItemWithSameItemTest" time="0.002"/>
+  <testcase classname="com.suprun.periodicals.service.PaymentServiceTest" name="createPayment" time="0.044"/>
+  <testcase classname="com.suprun.periodicals.service.PaymentServiceTest" name="findAllPaymentsTest" time="0.002"/>
+  <testcase classname="com.suprun.periodicals.service.PaymentServiceTest" name="findPaymentByIdWithExistingPaymentTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.PaymentServiceTest" name="findPaymentByIdWithNotExistingPaymentTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.PaymentServiceTest" name="getPaymentsCountTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="changeStatusOnAnotherStatusTest" time="0.004"/>
+  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="changeStatusOnSameStatusTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="createPeriodicalTest" time="1.33">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.suprun.periodicals.dao.connection.ConnectionPool.getConnection(ConnectionPool.java:95)
+	at com.suprun.periodicals.dao.connection.ConnectionProxy.getConnection(ConnectionProxy.java:47)
+	at com.suprun.periodicals.dao.transaction.TransactionSupport.initConnection(TransactionSupport.java:130)
+	at com.suprun.periodicals.dao.transaction.TransactionSupport.prepareConnectionForTransaction(TransactionSupport.java:48)
+	at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:62)
+	at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:46)
+	at com.suprun.periodicals.service.PeriodicalService.createPeriodical(PeriodicalService.java:55)
+	at com.suprun.periodicals.service.PeriodicalServiceTest.createPeriodicalTest(PeriodicalServiceTest.java:51)
+</failure>
+    <system-out>2021-02-03 10:22:29.777 - DEBUG: [main] com.suprun.periodicals.service.PeriodicalService:50 - Attempt to create periodical
+2021-02-03 10:22:29.782 - DEBUG: [main] com.suprun.periodicals.dao.transaction.Transaction:61 - Transaction begin
+2021-02-03 10:22:29.785 - DEBUG: [main] com.suprun.periodicals.dao.connection.ConnectionProxy:46 - ConnectionProxy is null
+Error
+</system-out>
+  </testcase>
+  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="findAllFrequenciesTest" time="0.01"/>
+  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="findAllPeriodicalTypesTest" time="0.017"/>
+  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="findAllPeriodicalsByStatusTest" time="0.002"/>
+  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="findAllPeriodicalsTest" time="0.009"/>
+  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="findAllPublishersTest" time="0.002"/>
+  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="findPeriodicalByIdWithExistingPeriodicalTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="findPeriodicalByIdWithNotExistingPeriodicalTest" time="0"/>
+  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="getPeriodicalsCountByStatusTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="getPeriodicalsCountTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.PeriodicalServiceTest" name="updatePeriodicalTest" time="0.003">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.suprun.periodicals.dao.connection.ConnectionPool.getConnection(ConnectionPool.java:95)
+	at com.suprun.periodicals.dao.connection.ConnectionProxy.getConnection(ConnectionProxy.java:47)
+	at com.suprun.periodicals.dao.transaction.TransactionSupport.initConnection(TransactionSupport.java:130)
+	at com.suprun.periodicals.dao.transaction.TransactionSupport.prepareConnectionForTransaction(TransactionSupport.java:48)
+	at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:62)
+	at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:46)
+	at com.suprun.periodicals.service.PeriodicalService.updatePeriodical(PeriodicalService.java:78)
+	at com.suprun.periodicals.service.PeriodicalServiceTest.updatePeriodicalTest(PeriodicalServiceTest.java:60)
+</failure>
+    <system-out>2021-02-03 10:22:31.160 - DEBUG: [main] com.suprun.periodicals.service.PeriodicalService:73 - Attempt to update periodical
+2021-02-03 10:22:31.161 - DEBUG: [main] com.suprun.periodicals.dao.transaction.Transaction:61 - Transaction begin
+2021-02-03 10:22:31.161 - DEBUG: [main] com.suprun.periodicals.dao.connection.ConnectionProxy:46 - ConnectionProxy is null
+Error
+</system-out>
+  </testcase>
+  <testcase classname="com.suprun.periodicals.service.SubscriptionBinServiceTest" name="addItemToCartTest" time="0.004"/>
+  <testcase classname="com.suprun.periodicals.service.SubscriptionBinServiceTest" name="removeAllItemFromCartTest" time="0.003"/>
+  <testcase classname="com.suprun.periodicals.service.SubscriptionBinServiceTest" name="removeItemFromCartTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.SubscriptionBinServiceTest" name="updateShoppingCartItemsFromDatabaseTest" time="0.007"/>
+  <testcase classname="com.suprun.periodicals.service.SubscriptionBinServiceTest" name="updateShoppingCartItemsFromDatabaseWithExceptionTest" time="0.005"/>
+  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="findAllSubscriptionPlans" time="0.002"/>
+  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="findAllSubscriptionsByPaymentWithExistingSubscriptionsTest" time="0.002"/>
+  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="findAllSubscriptionsByPaymentWithNotExistingSubscriptionsTest" time="0.004"/>
+  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="findAllSubscriptionsByUserAndStatusTest" time="0.003"/>
+  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="findSubscriptionPeriodByIdWithExistingSubscriptionPeriodTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="findSubscriptionPlanByIdWithNotExistingSubscriptionPlanTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="getSubscriptionsCountByUserAndStatusTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="isAlreadySubscribed" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.SubscriptionServiceTest" name="processSubscriptionsTestWithNotValidData" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="findUserByIdWithExistingUserTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="findUserByIdWithNotExistingUserTest" time="0.002"/>
+  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="registerUserWithNullEmailTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="registerUserWithNullPasswordTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="registerUserWithSameEmailTest" time="0.002"/>
+  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="registerUserWithValidParametersTest" time="0.13"/>
+  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="signInWithCorrectEmailAndPasswordTest" time="0.056"/>
+  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="signInWithNullEmailTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="signInWithNullPasswordTest" time="0.001"/>
+  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="signInWithWrongEmailTest" time="0"/>
+  <testcase classname="com.suprun.periodicals.service.UserServiceTest" name="signInWithWrongPasswordTest" time="0.052"/>
 </testsuite>

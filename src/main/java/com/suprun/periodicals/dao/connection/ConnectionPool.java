@@ -64,7 +64,8 @@ public class ConnectionPool {
         try {
             Class.forName(driverClassName);
         } catch (ClassNotFoundException e) {
-            e.getStackTrace();
+            LOGGER.debug("Exception occurred while loading JDBC driver");
+            throw new SQLException("Exception occurred while loading JDBC driver");
         }
         for (int i = 0; i < initialPoolSize; i++) {
             openAndPoolConnection();
@@ -87,7 +88,8 @@ public class ConnectionPool {
         try {
             connection = pool.take();
         } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
+            LOGGER.debug("Exception occurred while waiting to get connection from pool");
+            throw new SQLException("Exception occurred while waiting to get connection from pool");
         }
         if (connection.isClosed()) {
             connection = getConnection();
@@ -115,7 +117,7 @@ public class ConnectionPool {
                 ((PooledConnection) connection).getConnection().close();
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOGGER.debug("Exception occurred while closing connection");
         }
         pool.clear();
     }

@@ -1,4 +1,26 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 51, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.615 sec
+Tests run: 51, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.469 sec <<< FAILURE!
+createPeriodicalTest(com.suprun.periodicals.service.PeriodicalServiceTest)  Time elapsed: 1.33 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.suprun.periodicals.dao.connection.ConnectionPool.getConnection(ConnectionPool.java:95)
+	at com.suprun.periodicals.dao.connection.ConnectionProxy.getConnection(ConnectionProxy.java:47)
+	at com.suprun.periodicals.dao.transaction.TransactionSupport.initConnection(TransactionSupport.java:130)
+	at com.suprun.periodicals.dao.transaction.TransactionSupport.prepareConnectionForTransaction(TransactionSupport.java:48)
+	at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:62)
+	at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:46)
+	at com.suprun.periodicals.service.PeriodicalService.createPeriodical(PeriodicalService.java:55)
+	at com.suprun.periodicals.service.PeriodicalServiceTest.createPeriodicalTest(PeriodicalServiceTest.java:51)
+
+updatePeriodicalTest(com.suprun.periodicals.service.PeriodicalServiceTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.suprun.periodicals.dao.connection.ConnectionPool.getConnection(ConnectionPool.java:95)
+	at com.suprun.periodicals.dao.connection.ConnectionProxy.getConnection(ConnectionProxy.java:47)
+	at com.suprun.periodicals.dao.transaction.TransactionSupport.initConnection(TransactionSupport.java:130)
+	at com.suprun.periodicals.dao.transaction.TransactionSupport.prepareConnectionForTransaction(TransactionSupport.java:48)
+	at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:62)
+	at com.suprun.periodicals.dao.transaction.Transaction.doTransaction(Transaction.java:46)
+	at com.suprun.periodicals.service.PeriodicalService.updatePeriodical(PeriodicalService.java:78)
+	at com.suprun.periodicals.service.PeriodicalServiceTest.updatePeriodicalTest(PeriodicalServiceTest.java:60)
+
