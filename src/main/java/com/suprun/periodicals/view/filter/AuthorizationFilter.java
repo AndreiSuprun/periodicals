@@ -34,6 +34,7 @@ public class AuthorizationFilter implements Filter {
         secureAdminPaths.add(PagesPath.PAYMENT_OVERVIEW_PATH);
         secureAdminPaths.add(PagesPath.USER_PATH);
         secureAdminPaths.add(PagesPath.ADD_PUBLISHER_PATH);
+
         secureUserPaths.add(PagesPath.BIN_PATH);
         secureUserPaths.add(PagesPath.BIN_ADD_ITEM_PATH);
         secureUserPaths.add(PagesPath.BIN_REMOVE_ITEM_PATH);

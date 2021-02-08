@@ -17,16 +17,16 @@ import java.util.Set;
  * @author Andrei Suprun
  */
 public class AuthenticationFilter implements Filter {
-    private static final Set<String> unauthententicatedPaths = new HashSet<>();
+    private static final Set<String> unauthenticatedPaths = new HashSet<>();
 
     @Override
     public void init(FilterConfig filterConfig) {
-        unauthententicatedPaths.add(Resource.PATH.getProperty("path.home"));
-        unauthententicatedPaths.add(Resource.PATH.getProperty("path.signin"));
-        unauthententicatedPaths.add(Resource.PATH.getProperty("path.register"));
-        unauthententicatedPaths.add(Resource.PATH.getProperty("path.periodical"));
-        unauthententicatedPaths.add(Resource.PATH.getProperty("path.catalog"));
-        unauthententicatedPaths.add(Resource.PATH.getProperty("path.error"));
+        unauthenticatedPaths.add(Resource.PATH.getProperty("path.home"));
+        unauthenticatedPaths.add(Resource.PATH.getProperty("path.signin"));
+        unauthenticatedPaths.add(Resource.PATH.getProperty("path.register"));
+        unauthenticatedPaths.add(Resource.PATH.getProperty("path.periodical"));
+        unauthenticatedPaths.add(Resource.PATH.getProperty("path.catalog"));
+        unauthenticatedPaths.add(Resource.PATH.getProperty("path.error"));
     }
 
     @Override
@@ -50,7 +50,7 @@ public class AuthenticationFilter implements Filter {
                 chain.doFilter(req, resp);
             }
         } else {
-            if (unauthententicatedPaths.contains(requestPath)) {
+            if (unauthenticatedPaths.contains(requestPath)) {
                 chain.doFilter(req, resp);
             } else {
                 ViewUtil.redirectTo(req, resp, Resource.PATH.getProperty("path.signin"));
