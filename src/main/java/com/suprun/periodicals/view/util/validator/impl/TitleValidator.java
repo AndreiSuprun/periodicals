@@ -1,8 +1,11 @@
 package com.suprun.periodicals.view.util.validator.impl;
 
+/**
+ * Class for validating periodical name
+ */
 public class TitleValidator extends RegExValidator {
-    private final static int MAX_LENGTH = 255;
 
+    private static final int MAX_LENGTH = 255;
     private static final String TITLE_REGEX = "^[\\p{L}\\p{Digit}\\p{javaWhitespace}]+$";
 
     public TitleValidator() {

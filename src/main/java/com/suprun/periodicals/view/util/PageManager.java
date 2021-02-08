@@ -46,6 +46,13 @@ public class PageManager {
         this.attributesPaginationNumberOfPage = attributesPaginationNumberOfPage;
     }
 
+    /**
+     * Calculating page managing parameters
+     *
+     * @param req HttpServletRequest
+     * @param rowsCount count of rows in result list
+     * @return
+     */
     public long manage(HttpServletRequest req, long rowsCount) {
         String pageStr = req.getParameter(requestParameterPaginationPage);
 

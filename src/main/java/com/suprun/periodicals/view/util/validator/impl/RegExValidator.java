@@ -5,7 +5,11 @@ import com.suprun.periodicals.view.util.validator.Validator;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
+/**
+ * Base class for validation with regex
+ */
 public class RegExValidator implements Validator<String> {
+
     private int maxLength;
     private Pattern pattern;
 

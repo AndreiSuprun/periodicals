@@ -9,6 +9,7 @@ import com.suprun.periodicals.view.util.validator.impl.UserNameValidator;
 
 import java.io.Serializable;
 import java.util.Map;
+
 /**
  * Validation data in {@link PostRegisterCommand#execute}
  *

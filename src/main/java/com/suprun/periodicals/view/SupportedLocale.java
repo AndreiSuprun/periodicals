@@ -1,13 +1,15 @@
 package com.suprun.periodicals.view;
 
-import com.suprun.periodicals.view.filter.LocaleFilter;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
 
+/**
+ * Enum for supported locales
+ */
 public enum SupportedLocale {
+
     EN(new Locale("en", "EN")),
     RU(new Locale("ru", "BY"));
 

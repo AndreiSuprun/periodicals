@@ -1,5 +1,10 @@
 package com.suprun.periodicals.view.util.validator;
 
+/**
+ * Interface for entity fields validation
+ *
+ * @author Andrei Suprun
+ */
 public interface Validator<T> {
 
     /**

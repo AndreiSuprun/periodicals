@@ -2,6 +2,9 @@ package com.suprun.periodicals.view.util.validator;
 
 import com.suprun.periodicals.entity.Periodical;
 import com.suprun.periodicals.entity.Publisher;
+import com.suprun.periodicals.view.command.impl.admin.PostAddPublisherCommand;
+import com.suprun.periodicals.view.command.impl.admin.PostCreatePeriodicalCommand;
+import com.suprun.periodicals.view.command.impl.admin.PostEditPeriodicalCommand;
 import com.suprun.periodicals.view.constants.Attributes;
 import com.suprun.periodicals.view.util.validator.impl.DescriptionValidator;
 import com.suprun.periodicals.view.util.validator.impl.PeriodicalPriceValidator;
@@ -10,6 +13,11 @@ import com.suprun.periodicals.view.util.validator.impl.TitleValidator;
 import java.io.Serializable;
 import java.util.Map;
 
+/**
+ * Validation data in {@link PostAddPublisherCommand#execute}
+ *
+ * @author Andrei Suprun
+ */
 public class PublisherValidator extends EntityValidator {
 
     @Override

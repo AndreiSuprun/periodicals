@@ -1,6 +1,10 @@
 package com.suprun.periodicals.view.util.validator;
 
+/**
+ * Factory for receiving entity validators
+ */
 public class EntityValidatorFactory {
+
     public static EntityValidator getSignInValidator() {
         return new SignInValidator();
     }

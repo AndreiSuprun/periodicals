@@ -5,6 +5,9 @@ import com.suprun.periodicals.view.util.validator.Validator;
 import java.math.BigDecimal;
 import java.util.Objects;
 
+/**
+ * Class for validating periodical price
+ */
 public class PeriodicalPriceValidator implements Validator<BigDecimal> {
 
     private final static BigDecimal MIN_VALUE = new BigDecimal(0);

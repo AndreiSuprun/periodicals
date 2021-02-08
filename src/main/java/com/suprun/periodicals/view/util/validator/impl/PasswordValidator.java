@@ -4,6 +4,9 @@ import com.suprun.periodicals.view.util.validator.Validator;
 
 import java.util.Objects;
 
+/**
+ * Class for validating user password
+ */
 public class PasswordValidator implements Validator<String> {
 
     private final static int PASSWORD_MIN_LENGTH = 5;
