@@ -82,7 +82,6 @@
                     <div class="card-footer d-flex justify-content-sm-center justify-content-lg-end" style="height: 4.5rem;">
                         <form accept-charset="UTF-8" role="form" method="post" action="<c:url value="/app/bin/add"/>">
                             <!-- Button trigger modal -->
-                            <c:if test="${requestScope.userIsSubscribed ne true}">
                                 <div class="input-group ">
                                     <input type="hidden" class="form-control" name="periodicalId" value="${periodical.id}">
                                     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal-${periodical.id}">
@@ -90,7 +89,6 @@
                                         <fmt:message key="periodical.subscribe"/>
                                     </button>
                                 </div>
-                            </c:if>
                             <!-- Modal -->
                             <div class="modal fade" id="modal-${periodical.id}" tabindex="-1" role="dialog"
                                  aria-labelledby="modal-${periodical.id}" aria-hidden="true">

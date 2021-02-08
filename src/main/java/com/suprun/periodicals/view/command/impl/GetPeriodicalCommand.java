@@ -37,7 +37,6 @@ public class GetPeriodicalCommand implements Command {
     public CommandResult execute(HttpServletRequest request, HttpServletResponse response) {
         LOGGER.debug("Attempt to get page for overview periodical");
         Long periodicalId = Long.valueOf(request.getParameter(RequestParameters.PERIODICAL_ID));
-        Boolean isSubscribed = Boolean.parseBoolean(request.getParameter(RequestParameters.USER_IS_SUBSCRIBED));
         Optional<Periodical> periodicalOpt;
         try {
             periodicalOpt = periodicalService.findPeriodicalById(periodicalId);
@@ -55,7 +54,6 @@ public class GetPeriodicalCommand implements Command {
             }
             request.setAttribute(Attributes.SUBSCRIPTION_PERIODS, subscriptionPeriods);
             request.setAttribute(Attributes.PERIODICAL, periodicalOpt.get());
-            request.setAttribute(Attributes.USER_IS_SUBSCRIBED, isSubscribed);
             ViewUtil.checkErrorParameter(request, RequestParameters.ERROR_ATTRIBUTE);
             LOGGER.debug("Attempt to get page for overview periodical is successful");
             return CommandResult.forward(ViewsPath.PERIODICAL_VIEW);
