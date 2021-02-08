@@ -3,9 +3,9 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <footer class="footer mt-auto py-3 bg-light">
     <div class="container text-center">
-        
-
-        
+        <hr class="my-4">
+        <p class="h5 text-justify-center"><fmt:message key="site.footer"/></p>
+        <hr class="my-4">
     </div>
 </footer>
 
