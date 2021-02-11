@@ -66,12 +66,12 @@ public class PublisherService {
     }
 
     public void updatePublisher(Publisher publisher) throws ServiceException {
-        LOGGER.debug("Attempt to update periodical");
+        LOGGER.debug("Attempt to update publisher");
         if (publisher == null) {
-            throw new ServiceException("Attempt to update nullable periodical");
+            throw new ServiceException("Attempt to update nullable publisher");
         }
         try {
-            LOGGER.debug("Attempt to update periodical to db");
+            LOGGER.debug("Attempt to update publisher to db");
             publisherDao.update(publisher);
             LOGGER.debug("publisher in db");
         } catch (
@@ -90,7 +90,7 @@ public class PublisherService {
     }
 
     public List<Publisher> findAllPublishers() throws ServiceException {
-        LOGGER.debug("Attempt to find all periodicals");
+        LOGGER.debug("Attempt to find all publishers");
         try {
             return publisherDao.findAll();
         } catch (DaoException e) {
@@ -99,7 +99,7 @@ public class PublisherService {
     }
 
     public long getPublishersCount() throws ServiceException {
-        LOGGER.debug("Attempt to get count of periodicals");
+        LOGGER.debug("Attempt to get count of publishers");
         try {
             return publisherDao.getCount();
         } catch (DaoException e) {
