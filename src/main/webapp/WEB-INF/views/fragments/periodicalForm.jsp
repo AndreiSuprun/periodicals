@@ -39,7 +39,7 @@
     </label>
     <div class="input-group">
     <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroupPrepend0">
+                                <span class="input-group-text" id="inputGroupPrepend1">
                                     <i class="fa fa-file-text fa-lg" aria-hidden="true"></i>
                                 </span>
     </div>
@@ -65,7 +65,7 @@
     </label>
     <div class="input-group">
         <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroupPrepend1">
+                                <span class="input-group-text" id="inputGroupPrepend2">
                                     <i class="fa fa-usd fa-lg" aria-hidden="true"></i>
                                 </span>
         </div>
@@ -93,7 +93,7 @@
     </label>
     <div class="input-group">
         <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroupPrepend2">
+                                <span class="input-group-text" id="inputGroupPrepend3">
                                     <i class="fas fa-file-text fa-lg" aria-hidden="true"></i>
                                 </span>
         </div>
@@ -120,7 +120,7 @@
     </label>
     <div class="input-group">
         <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroupPrepend3">
+                                <span class="input-group-text" id="inputGroupPrepend4">
                                     <i class="fas fa-files-o fa-lg" aria-hidden="true"></i>
                                 </span>
         </div>
@@ -147,7 +147,7 @@
     </label>
     <div class="input-group">
         <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroupPrepend4">
+                                <span class="input-group-text" id="inputGroupPrepend5">
                                     <i class="fas fa-print fa-lg" aria-hidden="true"></i>
                                 </span>
         </div>
@@ -174,7 +174,7 @@
     </label>
     <div class="input-group">
         <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroupPrepend5">
+                                <span class="input-group-text" id="inputGroupPrepend6">
                                     <i class="fas fa-print fa-lg" aria-hidden="true"></i>
                                 </span>
         </div>
