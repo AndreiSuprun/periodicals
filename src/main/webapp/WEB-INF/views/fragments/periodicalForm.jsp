@@ -182,12 +182,12 @@
             <c:when test="${requestScope.periodicalDTO.picture ne null}">
                 <div class="mb-4">
                     <img src="<mytag:imgSrc pictureURL="${requestScope.periodicalDTO.picture}"/>"
-                    class="rounded-circle z-depth-1-half avatar-pic" alt="example placeholder avatar">
+                    class="rounded z-depth-1-half avatar-pic" width="300" alt="example placeholder avatar">
                 </div>
             </c:when>
             <c:otherwise>
                 <div class="z-depth-1-half mb-4">
-                    <img src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg" class="img-fluid"
+                    <img src="<c:url value="/resources/images/placeholder_600x400.svg"/>" class="img-fluid"
                          alt="example placeholder" width="256" height="200">
                 </div>
             </c:otherwise>
