@@ -79,6 +79,8 @@ public class CommandFactory {
                 new GetPaymentOverviewCommand());
         commands.put(buildKey(PagesPath.USER_PATH, RequestMethod.GET),
                 new GetUserProfileCommand());
+        commands.put(buildKey(PagesPath.ERROR_PATH, RequestMethod.POST),
+                new ErrorCommand());
         commands.put(buildKey(PagesPath.ERROR_PATH, RequestMethod.GET),
                 new ErrorCommand());
     }

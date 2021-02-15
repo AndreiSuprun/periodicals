@@ -35,7 +35,6 @@
                                    <c:if test="${errors.errorEmail}">
                                             is-invalid
                                    </c:if>"
-                                   pattern="^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$"
                                    placeholder="<fmt:message key="email.placeholder"/>" required maxlength="255">
                             <c:if test="${errors.errorEmail}">
                                 <div class="invalid-feedback">
@@ -65,7 +64,7 @@
                                             is-invalid
                                        </c:if>"
                                        placeholder="<fmt:message key="firstname.placeholder"/>"
-                                       aria-describedby="inputGroupPrepend" pattern="^[A-Z][a-zA-Z]+" required maxlength="255">
+                                       aria-describedby="inputGroupPrepend" pattern="^[\p{Lu}][\p{L}]+" required maxlength="255">
                                 <c:if test="${errors.errorFirstName}">
                                     <div class="invalid-feedback">
                                         <fmt:message key="error.firstname"/>
@@ -90,7 +89,7 @@
                                             is-invalid
                                        </c:if>"
                                        placeholder="<fmt:message key="lastname.placeholder"/>"
-                                       aria-describedby="inputGroupPrepend" pattern="^[A-Z][a-zA-Z]+" required maxlength="255">
+                                       aria-describedby="inputGroupPrepend" pattern="^[\p{Lu}][\p{L}]+" required maxlength="255">
                                 <c:if test="${errors.errorLastName}">
                                     <div class="invalid-feedback">
                                         <fmt:message key="error.lastname"/>

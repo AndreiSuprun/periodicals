@@ -16,6 +16,7 @@
     <div class="row h-100 justify-content-md-center align-items-center">
         <div class=" text-center">
             <h1 class="status-error"><fmt:message key="error.default.status"/></h1>
+            <h1 class="status-error"><c:out value="${pageContext.errorData.throwable.cause}"/></h1>
             <p class="text-muted-error"><fmt:message key="error.default.message"/></p>
             <a class="btn btn-lg btn-primary" href="<c:url value="/app/"/>" role="button">
                 <fmt:message key="error.backbtn"/>

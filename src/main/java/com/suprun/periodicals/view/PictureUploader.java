@@ -45,11 +45,12 @@ public class PictureUploader {
     /**
      * Generate file name using UUID generator
      *
-     * @param fileExtension extension of uploaded file
+     * @param request HttpServletRequest
      * @return generated file name
      * @throws IOException
      */
-    public static String receiveFileName(String fileExtension) throws IOException {
+    public static String receiveFileName(HttpServletRequest request) throws IOException, ServletException {
+        String fileExtension = getFileExtension(request);
         if (fileExtension == null) {
             return null;
         }

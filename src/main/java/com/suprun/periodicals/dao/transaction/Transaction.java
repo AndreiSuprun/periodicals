@@ -71,6 +71,7 @@ public interface Transaction {
                     rollbackException.addSuppressed(e);
                     throw new DaoException(rollbackException);
                 }
+                throw new DaoException(e);
             }
             transactionSupport.commit();
             transactionSupport.returnDefaultConnectionState();

@@ -15,7 +15,6 @@
     <div class="row h-100 justify-content-md-center align-items-center">
         <div class="card border-dark w-100">
             <div class="row no-gutters ">
-
                 <div class="col-md-8 text-white bg-primary">
                     <div class="card-header card-title text-center">
                         <h3>

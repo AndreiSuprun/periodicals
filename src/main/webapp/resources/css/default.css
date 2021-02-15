@@ -1,7 +1,6 @@
 body {
     background-image: url(../images/background.jpg);
     background-repeat: repeat;
-    padding-top: 8rem;
 }
 
 .jumbotron {background-image: url(../images/jumbotron.jpg);}

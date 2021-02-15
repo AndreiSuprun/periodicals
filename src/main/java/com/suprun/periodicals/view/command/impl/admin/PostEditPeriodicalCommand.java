@@ -60,12 +60,17 @@ public class PostEditPeriodicalCommand implements Command {
             String fileName = null;
             try {
                 stream = PictureUploader.receiveInputStream(request);
-                String fileExtension = PictureUploader.getFileExtension(request);
-                fileName = PictureUploader.receiveFileName(fileExtension);
+                fileName = PictureUploader.receiveFileName(request);
             } catch (ServletException | IOException e) {
                 LOGGER.error("Error occurred while picture processing");
+                request.setAttribute(Attributes.SERVICE_EXCEPTION, e.getLocalizedMessage());
+                return CommandResult.forward(ViewsPath.ERROR_GLOBAL_VIEW);
             }
-            periodicalDTO.setPicture(fileName);
+            if (fileName != null) {
+                periodicalDTO.setPicture(fileName);
+            } else {
+                periodicalDTO.setPicture(oldPicturePath);
+            }
             try {
                 periodicalService.updatePeriodical(periodicalDTO, stream, oldPicturePath);
             } catch (ServiceException e) {

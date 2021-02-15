@@ -10,6 +10,8 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+
 /**
  * Class for processing file uploading.
  *
@@ -28,12 +30,12 @@ public class PictureService {
      * @throws IOException
      */
     public static void uploadFile(InputStream inputStream, String fileName) throws IOException {
-        if (fileName != null) {
+        if (fileName != null && inputStream != null) {
             Path uploadDir = Paths.get(UPLOAD_DIRECTORY);
             if (!Files.exists(uploadDir)) {
                 Files.createDirectory(uploadDir);
             }
-            Files.copy(inputStream, Paths.get(UPLOAD_DIRECTORY + SLASH + fileName));
+            Files.copy(inputStream, Paths.get(UPLOAD_DIRECTORY + SLASH + fileName), StandardCopyOption.REPLACE_EXISTING);
         }
     }
 }

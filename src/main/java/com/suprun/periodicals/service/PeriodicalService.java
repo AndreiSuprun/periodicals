@@ -7,6 +7,7 @@ import com.suprun.periodicals.entity.Periodical;
 import com.suprun.periodicals.entity.PeriodicalCategory;
 import com.suprun.periodicals.entity.Publisher;
 import com.suprun.periodicals.util.PictureService;
+import com.suprun.periodicals.util.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -34,6 +35,8 @@ public class PeriodicalService {
             DaoFactory.getInstance().getFrequencyDao();
     private PublisherDao publisherDao =
             DaoFactory.getInstance().getPublisherDao();
+    private static final String SLASH = "\\";
+    private static final String UPLOAD_DIRECTORY = Resource.FILE_UPLOAD.getProperty("upload.path");
 
     private PeriodicalService() {
     }
@@ -81,9 +84,9 @@ public class PeriodicalService {
                 LOGGER.debug("periodical in db");
                 try {
                     PictureService.uploadFile(stream, periodical.getPicture());
-                    if (oldPicturePath != null) {
-                        Files.deleteIfExists(Paths.get(oldPicturePath));
-                    }
+//                    if (oldPicturePath != null && !oldPicturePath.equals(periodical.getPicture())) {
+//                        Files.deleteIfExists(Paths.get(UPLOAD_DIRECTORY + SLASH + oldPicturePath));
+//                    }
                 } catch (IOException e) {
                     LOGGER.error("Exception occurred while picture file processing");
                     throw new DaoException("Exception occurred while picture file processing", e);

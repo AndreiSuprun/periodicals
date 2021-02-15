@@ -37,24 +37,26 @@
     <label for="description">
         <fmt:message key="periodical.description"/>
     </label>
+    <div class="input-group">
     <div class="input-group-prepend">
                                 <span class="input-group-text" id="inputGroupPrepend0">
                                     <i class="fa fa-file-text fa-lg" aria-hidden="true"></i>
                                 </span>
     </div>
-    <input id="description"
+    <textarea id="description"
               name="periodicalDescription"
               class="form-control
               <c:if test="${errors.errorPeriodicalDescription}">
                         is-invalid
               </c:if>"
               placeholder="<fmt:message key="create.periodical.description.placeholder"/>"
-              required type="text" pattern="^[^(.|\s)*].+[^(.|\s)*]$" maxlength="510" value=<c:out value="${requestScope.periodicalDTO.description}"/> >
+              required cols="40" rows="3" maxlength="510"><c:out value="${requestScope.periodicalDTO.description}"/></textarea>
     <c:if test="${errors.errorPeriodicalDescription}">
         <div class="invalid-feedback">
             <fmt:message key="error.periodical.description"/>
         </div>
     </c:if>
+    </div>
 </div>
 
 <div class="form-group">
@@ -176,24 +178,24 @@
                                     <i class="fas fa-print fa-lg" aria-hidden="true"></i>
                                 </span>
         </div>
-<%--        <c:choose>--%>
-<%--            <c:when test="${requestScope.periodicalDTO.picture ne null}">--%>
-<%--                <div class="mb-4">--%>
-<%--                    <img src="<mytag:imgSrc pictureURL="${requestScope.periodicalDTO.picture}"/>"--%>
-<%--                    class="rounded-circle z-depth-1-half avatar-pic" alt="example placeholder avatar">--%>
-<%--                </div>--%>
-<%--            </c:when>--%>
-<%--            <c:otherwise>--%>
-<%--                <div class="z-depth-1-half mb-4">--%>
-<%--                    <img src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg" class="img-fluid"--%>
-<%--                         alt="example placeholder" width="256" height="200">--%>
-<%--                </div>--%>
-<%--            </c:otherwise>--%>
-<%--        </c:choose>--%>
-            <div class="custom-file">
-                <input type="file" name="picture" class="custom-file-input" id="picture"
-                       aria-describedby="inputGroupFileAddon01">
-                <label class="custom-file-label" for="picture"><fmt:message key="periodical.choose.file"/></label>
-            </div>
+        <c:choose>
+            <c:when test="${requestScope.periodicalDTO.picture ne null}">
+                <div class="mb-4">
+                    <img src="<mytag:imgSrc pictureURL="${requestScope.periodicalDTO.picture}"/>"
+                    class="rounded-circle z-depth-1-half avatar-pic" alt="example placeholder avatar">
+                </div>
+            </c:when>
+            <c:otherwise>
+                <div class="z-depth-1-half mb-4">
+                    <img src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg" class="img-fluid"
+                         alt="example placeholder" width="256" height="200">
+                </div>
+            </c:otherwise>
+        </c:choose>
+    </div>
+    <div class="custom-file">
+        <input type="file" name="picture" class="custom-file-input" id="picture"
+               aria-describedby="inputGroupFileAddon01">
+        <label class="custom-file-label" for="picture"><fmt:message key="periodical.choose.file"/></label>
     </div>
 </div>

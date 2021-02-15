@@ -1,11 +1,15 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<fmt:setLocale value="${sessionScope.locale}"/>
+<fmt:setBundle basename="i18n.language"/>
+
 <footer class="footer mt-auto py-3 bg-light">
     <div class="container text-center">
-        <hr class="my-4">
+        <hr class="my-2">
         <p class="h5 text-justify-center"><fmt:message key="site.footer"/></p>
-        <hr class="my-4">
+        <hr class="my-2">
     </div>
 </footer>
 
