@@ -2,10 +2,7 @@ package com.suprun.periodicals.service;
 
 
 import com.suprun.periodicals.dao.*;
-import com.suprun.periodicals.entity.Frequency;
-import com.suprun.periodicals.entity.Periodical;
-import com.suprun.periodicals.entity.PeriodicalCategory;
-import com.suprun.periodicals.entity.Publisher;
+import com.suprun.periodicals.entity.*;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
@@ -14,7 +11,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.io.InputStream;
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -39,26 +38,18 @@ class PeriodicalServiceTest {
     }
 
     @Test
-    void createPeriodicalTest() throws DaoException, ServiceException {
-        Long periodicalId = 1L;
-        Periodical periodical = Periodical.newBuilder().build();
-        when(periodicalDao.insert(periodical)).then((Answer<Periodical>) invocationOnMock -> {
-            Periodical toReturn = invocationOnMock.getArgumentAt(0, Periodical.class);
-            toReturn.setId(periodicalId);
-            return toReturn;
-        });
-
+    void createPeriodicalTestWithNotValidData() throws DaoException, ServiceException {
+        Periodical periodical = null;
         periodicalService.createPeriodical(periodical, InputStream.nullInputStream());
 
-        assertEquals(periodicalId, periodical.getId());
-        verify(periodicalDao, times(1)).insert(periodical);
+        verify(periodicalDao, never()).insert(periodical);
     }
 
     @Test
-    void updatePeriodicalTest() throws ServiceException, DaoException {
-        Periodical periodical = Periodical.newBuilder().build();
+    void updatePeriodicalTestWithNotValidData() throws ServiceException, DaoException {
+        Periodical periodical = null;
         periodicalService.updatePeriodical(periodical, InputStream.nullInputStream(), null);
-        verify(periodicalDao, times(1)).update(periodical);
+        verify(periodicalDao, never()).update(periodical);
     }
 
     @Test
