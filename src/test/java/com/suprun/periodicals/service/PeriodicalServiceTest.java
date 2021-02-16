@@ -40,15 +40,17 @@ class PeriodicalServiceTest {
     @Test
     void createPeriodicalTestWithNotValidData() throws DaoException, ServiceException {
         Periodical periodical = null;
-        periodicalService.createPeriodical(periodical, InputStream.nullInputStream());
 
+        ServiceException e = expectThrows(ServiceException.class, () -> periodicalService.createPeriodical(periodical, InputStream.nullInputStream()));
+        assertEquals("Attempt to insert nullable periodical", e.getMessage());
         verify(periodicalDao, never()).insert(periodical);
     }
 
     @Test
     void updatePeriodicalTestWithNotValidData() throws ServiceException, DaoException {
         Periodical periodical = null;
-        periodicalService.updatePeriodical(periodical, InputStream.nullInputStream(), null);
+        ServiceException e = expectThrows(ServiceException.class, () -> periodicalService.updatePeriodical(periodical, InputStream.nullInputStream(), null));
+        assertEquals("Attempt to update nullable periodical", e.getMessage());
         verify(periodicalDao, never()).update(periodical);
     }
 
