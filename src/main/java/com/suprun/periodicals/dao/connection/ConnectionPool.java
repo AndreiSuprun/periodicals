@@ -111,14 +111,17 @@ public class ConnectionPool {
     }
 
     public void closeAllConnections() {
-        busy.forEach(this::releaseConnection);
         try {
+            for (Connection connection : busy) {
+                ((PooledConnection) connection).getConnection().close();
+            }
             for (Connection connection : pool) {
                 ((PooledConnection) connection).getConnection().close();
             }
         } catch (SQLException e) {
             LOGGER.debug("Exception occurred while closing connection");
         }
+        busy.clear();
         pool.clear();
     }
 }
