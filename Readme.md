@@ -37,4 +37,4 @@
 - [x] Просматривать профили пользователей.
 
 ### ER МОДЕЛЬ ПРОЕКТА:
-![ER-MODEL](src/main/resources/images/er_model.png)
+![ER-MODEL](periodicals.png)

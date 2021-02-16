@@ -1,0 +1,4 @@
+INSERT INTO periodicals.users (user_id, role_id, last_name, first_name, email, password) VALUES (2, 2, 'Suprun', 'Andrei', 'suprun-an@mail.ru', 'eL0DXvEKdBpnEHh2kEQTsTDNrIzy+K3upA50dVeB1bs=$hqh92ynGMeCl32/dkD+oo2ROnIakRT5u5RMHkW8yM1Q=');
+INSERT INTO periodicals.users (user_id, role_id, last_name, first_name, email, password) VALUES (7, 1, 'Suprun', 'Andrei', 'andrei@tut.by', 'wsQlaBY617sRNSUIzaKOsWP6mcA+aJY7atQtEgd2PrM=$WB50C3l5uS3Y+9uKmqAqoUIn2wcpw9J+vrw7diuhxek=');
+INSERT INTO periodicals.users (user_id, role_id, last_name, first_name, email, password) VALUES (8, 2, 'Asdasdasd', 'Avbnf', 'werwe@gfhfgh.hg', 'M7zlFV+ZrdmXbBFq+ggHA/FKnMYrxYy3FiTtjC7zYQQ=$zKWvYVmiprJ+wGkeSFMnbgt+fgJ1AYBLev50P/1T8Zc=');
+INSERT INTO periodicals.users (user_id, role_id, last_name, first_name, email, password) VALUES (9, 2, 'Atyer', 'Atyret', 'rte@gf.hk', 'LNkQ/ePM+WpuFj7/N9fDeFbpXWD7ntLV7J9eESDvON4=$NHEIh/y4enJbY0Z5Wg4qMfLXN1gVEcpvOGKBH92JkqQ=');

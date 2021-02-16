@@ -1,0 +1,3 @@
+INSERT INTO periodicals.subscription_periods (subscription_period_id, subscription_period_name, subscription_period_rate, subscription_period_months_amount) VALUES (1, '1 месяц', 1.00, 1);
+INSERT INTO periodicals.subscription_periods (subscription_period_id, subscription_period_name, subscription_period_rate, subscription_period_months_amount) VALUES (2, '3 месяца', 3.00, 3);
+INSERT INTO periodicals.subscription_periods (subscription_period_id, subscription_period_name, subscription_period_rate, subscription_period_months_amount) VALUES (3, '6 месяцев', 6.00, 6);
