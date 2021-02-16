@@ -35,7 +35,9 @@ public class PictureService {
             if (!Files.exists(uploadDir)) {
                 Files.createDirectory(uploadDir);
             }
-            Files.copy(inputStream, Paths.get(UPLOAD_DIRECTORY + SLASH + fileName), StandardCopyOption.REPLACE_EXISTING);
+            if (!Files.exists(Paths.get(UPLOAD_DIRECTORY + SLASH + fileName))) {
+                Files.copy(inputStream, Paths.get(UPLOAD_DIRECTORY + SLASH + fileName));
+            }
         }
     }
 }
