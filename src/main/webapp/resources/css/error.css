@@ -1,28 +1,28 @@
 .status-error {
     font-family: Raleway, Helvetica, Arial, sans-serif;
     font-weight: 900;
-    font-size: 80px;
+    font-size: 50px;
     color: #8d7878;
 }
 
 .text-muted-error {
     font-family: Raleway, Helvetica, Arial, sans-serif;
     color: #ac9c9c;
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 700;
 }
 
 .default-status-error {
     font-family: Raleway, Helvetica, Arial, sans-serif;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 50px;
     color: black;
 }
 
 .default-text-muted-error {
     font-family: Raleway, Helvetica, Arial, sans-serif;
     color: black;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
 }
 

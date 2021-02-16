@@ -187,7 +187,7 @@
             </c:when>
             <c:otherwise>
                 <div class="z-depth-1-half mb-4">
-                    <img src="<c:url value="/resources/images/placeholder_600x400.svg"/>" class="img-fluid"
+                    <img src="<c:url value="/resources/images/placeholder.svg"/>" class="img-fluid"
                          alt="example placeholder" width="256" height="200">
                 </div>
             </c:otherwise>

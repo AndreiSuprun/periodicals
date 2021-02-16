@@ -84,9 +84,9 @@ public class PeriodicalService {
                 LOGGER.debug("periodical in db");
                 try {
                     PictureService.uploadFile(stream, periodical.getPicture());
-//                    if (oldPicturePath != null && !oldPicturePath.equals(periodical.getPicture())) {
-//                        Files.deleteIfExists(Paths.get(UPLOAD_DIRECTORY + SLASH + oldPicturePath));
-//                    }
+                    if (oldPicturePath != null && !oldPicturePath.equals(periodical.getPicture())) {
+                        Files.deleteIfExists(Paths.get(UPLOAD_DIRECTORY + SLASH + oldPicturePath));
+                    }
                 } catch (IOException e) {
                     LOGGER.error("Exception occurred while picture file processing");
                     throw new DaoException("Exception occurred while picture file processing", e);
