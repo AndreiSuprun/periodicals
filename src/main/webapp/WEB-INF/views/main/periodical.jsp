@@ -73,7 +73,7 @@
                         <dl class="row" style="height: 2rem;">
                             <dt class="col-sm-4"><fmt:message key="periodical.price"/>:</dt>
                             <dd class="col-sm-8">
-                                <c:out value="${periodical.price} $"/>
+                                <c:out value="${periodical.price} BYN"/>
                             </dd>
                         </dl>
                     </li>

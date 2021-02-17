@@ -16,30 +16,30 @@
         <div class="card border-dark w-100">
             <div class="row no-gutters ">
                 <div class="col-md-4 d-flex align-content-center flex-wrap">
-                  <img src="<c:url value="/resources/images/user-logo.png"/>" class="card-img" alt="user-logo">
+                    <img src="<c:url value="/resources/images/user-logo.png"/>" class="card-img" alt="user-logo">
                 </div>
-                <div class="col-md-8 text-white bg-primary">
+                <div class="col-md-8 bg-light">
                     <div class="card-header card-title text-center">
                         <h3>
                             <c:out value="${requestScope.userDTO.firstName}"/>
                             <c:out value="${requestScope.userDTO.lastName}"/>
                         </h3>
                     </div>
-                    <ul class="bg-primary text-white list-group list-group-flush">
-                        <li class="list-group-item bg-primary">
+                    <ul class="bg-primary list-group list-group-flush">
+                        <li class="list-group-item bg-light">
                             <dl class="row">
-                                <dt class="col-sm-3"><fmt:message key="role"/>:</dt>
-                                <dd class="col-sm-9">
+                                <dt class="col-sm-5"><fmt:message key="role"/>:</dt>
+                                <dd class="col-sm-7">
                                      <span class="badge badge-success">
                                         <c:out value="${requestScope.userDTO.role.name}"/>
                                     </span>
                                 </dd>
                             </dl>
                         </li>
-                        <li class="list-group-item bg-primary">
+                        <li class="list-group-item bg-light">
                             <dl class="row">
-                                <dt class="col-sm-3"><fmt:message key="email"/>:</dt>
-                                <dd class="col-sm-9">
+                                <dt class="col-sm-5"><fmt:message key="email"/>:</dt>
+                                <dd class="col-sm-7">
                                     <c:out value="${requestScope.userDTO.email}"/>
                                 </dd>
                             </dl>

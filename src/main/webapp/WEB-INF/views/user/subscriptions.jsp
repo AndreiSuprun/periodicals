@@ -41,7 +41,7 @@
         </c:when>
         <c:otherwise>
             <ul class="nav nav-pills mb-5" id="pills-tab" role="tablist">
-                <li class="nav-item w-50 text-center">
+                <li class="nav-item w-50 text-center bg-light">
                     <a class="nav-link
                                 <c:if test="${not empty active}">
                                     active
