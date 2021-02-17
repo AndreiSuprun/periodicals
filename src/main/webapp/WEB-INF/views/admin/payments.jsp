@@ -35,7 +35,7 @@
             <div class=" table-responsive">
                 <table class="table table-striped table-hover text-center align-middle">
                     <thead>
-                    <tr class="bg-primary">
+                    <tr class="table-info">
                         <th scope="col" class="align-middle">№</th>
                         <th scope="col" class="align-middle"><fmt:message key="payments.user"/></th>
                         <th scope="col" class="align-middle"><fmt:message key="payments.date"/></th>
@@ -58,7 +58,7 @@
                                                 pattern="yyyy-MM-dd/HH:mm"/>
                             </td>
                             <td class="align-middle">
-                                <c:out value="${payment.totalPrice}"/> $
+                                <c:out value="${payment.totalPrice}"/> BYN
                             </td>
                             <td class="align-middle">
                                 <a href="<c:url value="/app/admin/payment?paymentId=${payment.id}"/>">

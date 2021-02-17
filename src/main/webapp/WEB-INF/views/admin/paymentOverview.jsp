@@ -44,7 +44,7 @@
                     <dl class="row">
                         <dt class="col-sm-3"><fmt:message key="payments.price"/>:</dt>
                         <dd class="col-sm-9">
-                            <c:out value="${requestScope.paymentDTO.totalPrice}"/> $
+                            <c:out value="${requestScope.paymentDTO.totalPrice}"/> BYN
                         </dd>
                     </dl>
                 </li>
@@ -65,7 +65,7 @@
     <div class=" table-responsive">
         <table class="table table-striped table-hover text-center align-middle">
             <thead>
-            <tr class="bg-primary">
+            <tr class="table-info">
                 <th scope="col" class="align-middle">№</th>
                 <th scope="col" class="align-middle"><fmt:message key="bin.name"/></th>
                 <th scope="col" class="align-middle"><fmt:message key="periodical.availability"/></th>

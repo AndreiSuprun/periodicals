@@ -35,7 +35,7 @@
             <div class=" table-responsive">
                 <table class="table table-striped table-hover text-center align-middle">
                     <thead>
-                    <tr class="bg-primary">
+                    <tr class="table-info">
                         <th scope="col">№</th>
                         <th scope="col"><fmt:message key="periodical.name"/></th>
                         <th scope="col"><fmt:message key="periodical.availability"/></th>

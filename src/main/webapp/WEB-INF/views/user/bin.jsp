@@ -40,7 +40,7 @@
             <div class=" table-responsive">
                 <table class="table table-striped table-hover text-center align-middle">
                     <thead>
-                    <tr class="bg-primary">
+                    <tr class="bg-light">
                         <th scope="col" class="align-middle">№</th>
                         <th scope="col" class="align-middle"><fmt:message key="bin.name"/></th>
                         <th scope="col" class="align-middle"><fmt:message key="periodical.availability"/></th>
